@@ -1,0 +1,12 @@
+//
+//  Production.xcconfig
+//  Survey
+//
+//  Created by Taher on 26/10/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION
+SURVEY_API_BASE_URL = api.production.org
