@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */; };
 		043A1194290AFE7700F53F4B /* SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1193290AFE7700F53F4B /* SurveyUITests.swift */; };
+		047B28E6290A772A005D615C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B28E5290A772A005D615C /* Images.swift */; };
 		04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */; };
 		04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB8A582907FACD00CAD4E5 /* Assets.xcassets */; };
 		04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* SplashView.swift */; };
@@ -41,6 +42,8 @@
 		043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUnitTests.swift; sourceTree = "<group>"; };
 		043A1191290AFE7700F53F4B /* SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A1193290AFE7700F53F4B /* SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUITests.swift; sourceTree = "<group>"; };
+		047B28E5290A772A005D615C /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		0489B4833F3AD0F9AE546AD5 /* Pods-Survey.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.staging.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.staging.xcconfig"; sourceTree = "<group>"; };
 		04BB8A512907FACB00CAD4E5 /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApp.swift; sourceTree = "<group>"; };
 		04BB8A582907FACD00CAD4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040102352909689E001332CF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04010236290968AD001332CF /* Rswift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		04010236290968AD001332CF /* Rswift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rswift;
+			sourceTree = "<group>";
+		};
+		04010237290968EE001332CF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		042B06B02909241700477605 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				04BB8A652907FF8600CAD4E5 /* Assets */,
+				047B28E5290A772A005D615C /* Images.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -242,6 +268,8 @@
 		04BB8A6F2908032400CAD4E5 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				04010237290968EE001332CF /* Extension */,
+				040102352909689E001332CF /* Helper */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -574,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E628FD29090A1E000032C8 /* Configuration.swift in Sources */,
+				047B28E6290A772A005D615C /* Images.swift in Sources */,
 				04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */,
 				04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */,
 			);
