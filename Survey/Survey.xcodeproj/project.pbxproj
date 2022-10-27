@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */; };
+		043A1194290AFE7700F53F4B /* SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1193290AFE7700F53F4B /* SurveyUITests.swift */; };
 		04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */; };
 		04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB8A582907FACD00CAD4E5 /* Assets.xcassets */; };
 		04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* SplashView.swift */; };
 		04E628FD29090A1E000032C8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E628FC29090A1E000032C8 /* Configuration.swift */; };
-		4FFFC006EC62B7DDF803621F /* Pods_Survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3061B05C135D4B9820B5F6E /* Pods_Survey.framework */; };
-		D2A035F74722B977AD07397F /* Pods_Survey_SurveyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B46DAC11ED7AF8CF7A9036 /* Pods_Survey_SurveyUITests.framework */; };
-		FFA11CC1D181FE14E2D2D250 /* Pods_SurveyUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1071430B5659BE8FF9A50D41 /* Pods_SurveyUnitTests.framework */; };
+		B2EDBB866438B03BA3972F58 /* Pods_Survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C6E57CED78524A86770EC /* Pods_Survey.framework */; };
+		BBE54A6504DC96FF37ED3FF6 /* Pods_Survey_SurveyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E99DEB6EBC0FFEEBD980C4F /* Pods_Survey_SurveyUITests.framework */; };
+		C8DFF50631C1B3E35591A760 /* Pods_SurveyUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF33291D6447BC60A34F59C /* Pods_SurveyUnitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04BB8A7A2908068400CAD4E5 /* PBXContainerItemProxy */ = {
+		043A1187290AFE4700F53F4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04BB8A492907FACB00CAD4E5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 04BB8A502907FACB00CAD4E5;
 			remoteInfo = Survey;
 		};
-		04BB8A89290806B100CAD4E5 /* PBXContainerItemProxy */ = {
+		043A1197290AFE7700F53F4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04BB8A492907FACB00CAD4E5 /* Project object */;
 			proxyType = 1;
@@ -35,52 +37,54 @@
 
 /* Begin PBXFileReference section */
 		042B06B3290924AF00477605 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0489B4833F3AD0F9AE546AD5 /* Pods-Survey.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.staging.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.staging.xcconfig"; sourceTree = "<group>"; };
+		043A1183290AFE4700F53F4B /* SurveyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUnitTests.swift; sourceTree = "<group>"; };
+		043A1191290AFE7700F53F4B /* SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043A1193290AFE7700F53F4B /* SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUITests.swift; sourceTree = "<group>"; };
 		04BB8A512907FACB00CAD4E5 /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApp.swift; sourceTree = "<group>"; };
 		04BB8A582907FACD00CAD4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BB8A6D290802E600CAD4E5 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		04BB8A762908068400CAD4E5 /* SurveyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04BB8A83290806B100CAD4E5 /* SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E628FC29090A1E000032C8 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		04E6290029090E15000032C8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		04E6290129090E26000032C8 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		04E6290229090E3D000032C8 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		1071430B5659BE8FF9A50D41 /* Pods_SurveyUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurveyUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BBE9F07FFAEC8BB6D5B1D55 /* Pods-Survey-SurveyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey-SurveyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4F2AFCA12B4642DF2524122A /* Pods-SurveyUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6E4CE08EE3C5F2351FEBF207 /* Pods-Survey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.debug.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.debug.xcconfig"; sourceTree = "<group>"; };
-		79B46DAC11ED7AF8CF7A9036 /* Pods_Survey_SurveyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survey_SurveyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92472028441E9D09C6C5B3FE /* Pods-Survey.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.production.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.production.xcconfig"; sourceTree = "<group>"; };
-		A3575C5B4990483C0C4E02F1 /* Pods-SurveyUnitTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyUnitTests.production.xcconfig"; path = "Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests.production.xcconfig"; sourceTree = "<group>"; };
-		C3061B05C135D4B9820B5F6E /* Pods_Survey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1E3A9E20BA13988E8E92DCB /* Pods-SurveyUnitTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyUnitTests.staging.xcconfig"; path = "Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests.staging.xcconfig"; sourceTree = "<group>"; };
-		D446F0A578F9E923173D7EDF /* Pods-Survey-SurveyUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey-SurveyUITests.production.xcconfig"; path = "Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests.production.xcconfig"; sourceTree = "<group>"; };
-		FAC5BB0061F28BC8E4D6D59E /* Pods-Survey-SurveyUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey-SurveyUITests.staging.xcconfig"; path = "Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		1E99DEB6EBC0FFEEBD980C4F /* Pods_Survey_SurveyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survey_SurveyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4E09C3B0D7B286C3B3A59B /* Pods-Survey-SurveyUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey-SurveyUITests.staging.xcconfig"; path = "Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		5661B33393EDE59046BD72D2 /* Pods-SurveyUnitTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyUnitTests.production.xcconfig"; path = "Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests.production.xcconfig"; sourceTree = "<group>"; };
+		5D4C1C8860071D56E9F66342 /* Pods-Survey-SurveyUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey-SurveyUITests.production.xcconfig"; path = "Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests.production.xcconfig"; sourceTree = "<group>"; };
+		630D177C410934EE037BE852 /* Pods-SurveyUnitTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyUnitTests.staging.xcconfig"; path = "Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests.staging.xcconfig"; sourceTree = "<group>"; };
+		7BF33291D6447BC60A34F59C /* Pods_SurveyUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurveyUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8B03DE148CAF58B57D2F69 /* Pods-SurveyUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D4C6E57CED78524A86770EC /* Pods_Survey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C137B7F97CA5A841E45593D8 /* Pods-Survey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.debug.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.debug.xcconfig"; sourceTree = "<group>"; };
+		C847CDA9C0E333F62F214D42 /* Pods-Survey-SurveyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey-SurveyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F18D2573F57D4D19DD34C280 /* Pods-Survey.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.staging.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.staging.xcconfig"; sourceTree = "<group>"; };
+		F7A19D57F63655CE3E0936FA /* Pods-Survey.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.production.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		043A1180290AFE4700F53F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8DFF50631C1B3E35591A760 /* Pods_SurveyUnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043A118E290AFE7700F53F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE54A6504DC96FF37ED3FF6 /* Pods_Survey_SurveyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04BB8A4E2907FACB00CAD4E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FFFC006EC62B7DDF803621F /* Pods_Survey.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04BB8A732908068400CAD4E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFA11CC1D181FE14E2D2D250 /* Pods_SurveyUnitTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04BB8A80290806B000CAD4E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2A035F74722B977AD07397F /* Pods_Survey_SurveyUITests.framework in Frameworks */,
+				B2EDBB866438B03BA3972F58 /* Pods_Survey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,15 +99,31 @@
 			path = Plists;
 			sourceTree = "<group>";
 		};
+		043A1184290AFE4700F53F4B /* SurveyUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */,
+			);
+			path = SurveyUnitTests;
+			sourceTree = "<group>";
+		};
+		043A1192290AFE7700F53F4B /* SurveyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				043A1193290AFE7700F53F4B /* SurveyUITests.swift */,
+			);
+			path = SurveyUITests;
+			sourceTree = "<group>";
+		};
 		04BB8A482907FACB00CAD4E5 = {
 			isa = PBXGroup;
 			children = (
+				043A1184290AFE4700F53F4B /* SurveyUnitTests */,
+				043A1192290AFE7700F53F4B /* SurveyUITests */,
 				04BB8A522907FACB00CAD4E5 /* Products */,
 				04BB8A532907FACC00CAD4E5 /* Survey */,
-				04BB8A84290806B100CAD4E5 /* SurveyUITests */,
-				04BB8A772908068400CAD4E5 /* SurveyUnitTests */,
 				C5F9CEB4F9EA676AEE421228 /* Pods */,
-				D69FB6343CC98C9D296D0F2F /* Frameworks */,
+				D356919A433BE31656F2EF11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				04BB8A512907FACB00CAD4E5 /* Survey.app */,
-				04BB8A762908068400CAD4E5 /* SurveyUnitTests.xctest */,
-				04BB8A83290806B100CAD4E5 /* SurveyUITests.xctest */,
+				043A1183290AFE4700F53F4B /* SurveyUnitTests.xctest */,
+				043A1191290AFE7700F53F4B /* SurveyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,68 +246,6 @@
 			path = Supports;
 			sourceTree = "<group>";
 		};
-		04BB8A772908068400CAD4E5 /* SurveyUnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				04BB8A902908087C00CAD4E5 /* Sources */,
-				04BB8A8F2908087300CAD4E5 /* Resources */,
-				04BB8A8E2908086700CAD4E5 /* Configurations */,
-			);
-			path = SurveyUnitTests;
-			sourceTree = "<group>";
-		};
-		04BB8A84290806B100CAD4E5 /* SurveyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				04BB8A932908089500CAD4E5 /* Resources */,
-				04BB8A922908088A00CAD4E5 /* Configurations */,
-				04BB8A912908088200CAD4E5 /* Sources */,
-			);
-			path = SurveyUITests;
-			sourceTree = "<group>";
-		};
-		04BB8A8E2908086700CAD4E5 /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configurations;
-			sourceTree = "<group>";
-		};
-		04BB8A8F2908087300CAD4E5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		04BB8A902908087C00CAD4E5 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		04BB8A912908088200CAD4E5 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		04BB8A922908088A00CAD4E5 /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configurations;
-			sourceTree = "<group>";
-		};
-		04BB8A932908089500CAD4E5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		04E628F32909003D000032C8 /* XCConfigs */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,25 +259,25 @@
 		C5F9CEB4F9EA676AEE421228 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6E4CE08EE3C5F2351FEBF207 /* Pods-Survey.debug.xcconfig */,
-				0489B4833F3AD0F9AE546AD5 /* Pods-Survey.staging.xcconfig */,
-				92472028441E9D09C6C5B3FE /* Pods-Survey.production.xcconfig */,
-				3BBE9F07FFAEC8BB6D5B1D55 /* Pods-Survey-SurveyUITests.debug.xcconfig */,
-				FAC5BB0061F28BC8E4D6D59E /* Pods-Survey-SurveyUITests.staging.xcconfig */,
-				D446F0A578F9E923173D7EDF /* Pods-Survey-SurveyUITests.production.xcconfig */,
-				4F2AFCA12B4642DF2524122A /* Pods-SurveyUnitTests.debug.xcconfig */,
-				D1E3A9E20BA13988E8E92DCB /* Pods-SurveyUnitTests.staging.xcconfig */,
-				A3575C5B4990483C0C4E02F1 /* Pods-SurveyUnitTests.production.xcconfig */,
+				C137B7F97CA5A841E45593D8 /* Pods-Survey.debug.xcconfig */,
+				F18D2573F57D4D19DD34C280 /* Pods-Survey.staging.xcconfig */,
+				F7A19D57F63655CE3E0936FA /* Pods-Survey.production.xcconfig */,
+				C847CDA9C0E333F62F214D42 /* Pods-Survey-SurveyUITests.debug.xcconfig */,
+				3D4E09C3B0D7B286C3B3A59B /* Pods-Survey-SurveyUITests.staging.xcconfig */,
+				5D4C1C8860071D56E9F66342 /* Pods-Survey-SurveyUITests.production.xcconfig */,
+				8B8B03DE148CAF58B57D2F69 /* Pods-SurveyUnitTests.debug.xcconfig */,
+				630D177C410934EE037BE852 /* Pods-SurveyUnitTests.staging.xcconfig */,
+				5661B33393EDE59046BD72D2 /* Pods-SurveyUnitTests.production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D69FB6343CC98C9D296D0F2F /* Frameworks */ = {
+		D356919A433BE31656F2EF11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C3061B05C135D4B9820B5F6E /* Pods_Survey.framework */,
-				79B46DAC11ED7AF8CF7A9036 /* Pods_Survey_SurveyUITests.framework */,
-				1071430B5659BE8FF9A50D41 /* Pods_SurveyUnitTests.framework */,
+				8D4C6E57CED78524A86770EC /* Pods_Survey.framework */,
+				1E99DEB6EBC0FFEEBD980C4F /* Pods_Survey_SurveyUITests.framework */,
+				7BF33291D6447BC60A34F59C /* Pods_SurveyUnitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -327,11 +285,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		043A1182290AFE4700F53F4B /* SurveyUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043A1189290AFE4700F53F4B /* Build configuration list for PBXNativeTarget "SurveyUnitTests" */;
+			buildPhases = (
+				15441107E65B5D59138B894D /* [CP] Check Pods Manifest.lock */,
+				043A117F290AFE4700F53F4B /* Sources */,
+				043A1180290AFE4700F53F4B /* Frameworks */,
+				043A1181290AFE4700F53F4B /* Resources */,
+				E0DD263404B88994A4C978AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043A1188290AFE4700F53F4B /* PBXTargetDependency */,
+			);
+			name = SurveyUnitTests;
+			productName = SurveyUnitTests;
+			productReference = 043A1183290AFE4700F53F4B /* SurveyUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		043A1190290AFE7700F53F4B /* SurveyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043A1199290AFE7700F53F4B /* Build configuration list for PBXNativeTarget "SurveyUITests" */;
+			buildPhases = (
+				C42684E0A3D5DF4968EF35EC /* [CP] Check Pods Manifest.lock */,
+				043A118D290AFE7700F53F4B /* Sources */,
+				043A118E290AFE7700F53F4B /* Frameworks */,
+				043A118F290AFE7700F53F4B /* Resources */,
+				04E3DD7CF9F89BEE5156A693 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043A1198290AFE7700F53F4B /* PBXTargetDependency */,
+			);
+			name = SurveyUITests;
+			productName = SurveyUITests;
+			productReference = 043A1191290AFE7700F53F4B /* SurveyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		04BB8A502907FACB00CAD4E5 /* Survey */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BB8A5F2907FACD00CAD4E5 /* Build configuration list for PBXNativeTarget "Survey" */;
 			buildPhases = (
-				F654C03C6C9C171D697C117B /* [CP] Check Pods Manifest.lock */,
+				229CD0371E0F2FC88459D0C0 /* [CP] Check Pods Manifest.lock */,
 				04BB8A4D2907FACB00CAD4E5 /* Sources */,
 				04BB8A4E2907FACB00CAD4E5 /* Frameworks */,
 				04BB8A4F2907FACB00CAD4E5 /* Resources */,
@@ -347,46 +345,6 @@
 			productReference = 04BB8A512907FACB00CAD4E5 /* Survey.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04BB8A752908068400CAD4E5 /* SurveyUnitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04BB8A7C2908068400CAD4E5 /* Build configuration list for PBXNativeTarget "SurveyUnitTests" */;
-			buildPhases = (
-				BE96D3C9EDD3CC36911EC969 /* [CP] Check Pods Manifest.lock */,
-				04BB8A722908068400CAD4E5 /* Sources */,
-				04BB8A732908068400CAD4E5 /* Frameworks */,
-				04BB8A742908068400CAD4E5 /* Resources */,
-				1CDC4DE4E64CFA7396E1C4D4 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04BB8A7B2908068400CAD4E5 /* PBXTargetDependency */,
-			);
-			name = SurveyUnitTests;
-			productName = SurveyUnitTests;
-			productReference = 04BB8A762908068400CAD4E5 /* SurveyUnitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		04BB8A82290806B000CAD4E5 /* SurveyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04BB8A8B290806B100CAD4E5 /* Build configuration list for PBXNativeTarget "SurveyUITests" */;
-			buildPhases = (
-				991D7F07243FBAF6AFD38DEA /* [CP] Check Pods Manifest.lock */,
-				04BB8A7F290806B000CAD4E5 /* Sources */,
-				04BB8A80290806B000CAD4E5 /* Frameworks */,
-				04BB8A81290806B000CAD4E5 /* Resources */,
-				4C4C00F399133A3EB22D901A /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04BB8A8A290806B100CAD4E5 /* PBXTargetDependency */,
-			);
-			name = SurveyUITests;
-			productName = SurveyUITests;
-			productReference = 04BB8A83290806B100CAD4E5 /* SurveyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -397,16 +355,16 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					043A1182290AFE4700F53F4B = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 04BB8A502907FACB00CAD4E5;
+					};
+					043A1190290AFE7700F53F4B = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 04BB8A502907FACB00CAD4E5;
+					};
 					04BB8A502907FACB00CAD4E5 = {
 						CreatedOnToolsVersion = 14.0.1;
-					};
-					04BB8A752908068400CAD4E5 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 04BB8A502907FACB00CAD4E5;
-					};
-					04BB8A82290806B000CAD4E5 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 04BB8A502907FACB00CAD4E5;
 					};
 				};
 			};
@@ -424,32 +382,32 @@
 			projectRoot = "";
 			targets = (
 				04BB8A502907FACB00CAD4E5 /* Survey */,
-				04BB8A752908068400CAD4E5 /* SurveyUnitTests */,
-				04BB8A82290806B000CAD4E5 /* SurveyUITests */,
+				043A1182290AFE4700F53F4B /* SurveyUnitTests */,
+				043A1190290AFE7700F53F4B /* SurveyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		043A1181290AFE4700F53F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043A118F290AFE7700F53F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04BB8A4F2907FACB00CAD4E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04BB8A742908068400CAD4E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04BB8A81290806B000CAD4E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,24 +450,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		1CDC4DE4E64CFA7396E1C4D4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C4C00F399133A3EB22D901A /* [CP] Embed Pods Frameworks */ = {
+		04E3DD7CF9F89BEE5156A693 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -526,29 +467,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		991D7F07243FBAF6AFD38DEA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Survey-SurveyUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE96D3C9EDD3CC36911EC969 /* [CP] Check Pods Manifest.lock */ = {
+		15441107E65B5D59138B894D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -570,7 +489,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F654C03C6C9C171D697C117B /* [CP] Check Pods Manifest.lock */ = {
+		229CD0371E0F2FC88459D0C0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -592,9 +511,64 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C42684E0A3D5DF4968EF35EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Survey-SurveyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0DD263404B88994A4C978AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		043A117F290AFE4700F53F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043A118D290AFE7700F53F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043A1194290AFE7700F53F4B /* SurveyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04BB8A4D2907FACB00CAD4E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,36 +579,333 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04BB8A722908068400CAD4E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04BB8A7F290806B000CAD4E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04BB8A7B2908068400CAD4E5 /* PBXTargetDependency */ = {
+		043A1188290AFE4700F53F4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04BB8A502907FACB00CAD4E5 /* Survey */;
-			targetProxy = 04BB8A7A2908068400CAD4E5 /* PBXContainerItemProxy */;
+			targetProxy = 043A1187290AFE4700F53F4B /* PBXContainerItemProxy */;
 		};
-		04BB8A8A290806B100CAD4E5 /* PBXTargetDependency */ = {
+		043A1198290AFE7700F53F4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04BB8A502907FACB00CAD4E5 /* Survey */;
-			targetProxy = 04BB8A89290806B100CAD4E5 /* PBXContainerItemProxy */;
+			targetProxy = 043A1197290AFE7700F53F4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		043A118A290AFE4700F53F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8B03DE148CAF58B57D2F69 /* Pods-SurveyUnitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Survey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Survey";
+			};
+			name = Debug;
+		};
+		043A118B290AFE4700F53F4B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630D177C410934EE037BE852 /* Pods-SurveyUnitTests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Survey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Survey";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		043A118C290AFE4700F53F4B /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5661B33393EDE59046BD72D2 /* Pods-SurveyUnitTests.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Survey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Survey";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		043A119A290AFE7700F53F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C847CDA9C0E333F62F214D42 /* Pods-Survey-SurveyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Survey;
+			};
+			name = Debug;
+		};
+		043A119B290AFE7700F53F4B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4E09C3B0D7B286C3B3A59B /* Pods-Survey-SurveyUITests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Survey;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		043A119C290AFE7700F53F4B /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4C1C8860071D56E9F66342 /* Pods-Survey-SurveyUITests.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Survey;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
 		04BB8A5D2907FACD00CAD4E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04E6290029090E15000032C8 /* Debug.xcconfig */;
@@ -755,7 +1026,7 @@
 		};
 		04BB8A602907FACD00CAD4E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E4CE08EE3C5F2351FEBF207 /* Pods-Survey.debug.xcconfig */;
+			baseConfigurationReference = C137B7F97CA5A841E45593D8 /* Pods-Survey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -786,7 +1057,7 @@
 		};
 		04BB8A612907FACD00CAD4E5 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0489B4833F3AD0F9AE546AD5 /* Pods-Survey.staging.xcconfig */;
+			baseConfigurationReference = F18D2573F57D4D19DD34C280 /* Pods-Survey.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -812,76 +1083,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Staging;
-		};
-		04BB8A7D2908068400CAD4E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F2AFCA12B4642DF2524122A /* Pods-SurveyUnitTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUnitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Survey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Survey";
-			};
-			name = Debug;
-		};
-		04BB8A7E2908068400CAD4E5 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1E3A9E20BA13988E8E92DCB /* Pods-SurveyUnitTests.staging.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUnitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Survey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Survey";
-			};
-			name = Staging;
-		};
-		04BB8A8C290806B100CAD4E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BBE9F07FFAEC8BB6D5B1D55 /* Pods-Survey-SurveyUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Survey;
-			};
-			name = Debug;
-		};
-		04BB8A8D290806B100CAD4E5 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAC5BB0061F28BC8E4D6D59E /* Pods-Survey-SurveyUITests.staging.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Survey;
 			};
 			name = Staging;
 		};
@@ -944,7 +1145,7 @@
 		};
 		04E628F9290905AE000032C8 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92472028441E9D09C6C5B3FE /* Pods-Survey.production.xcconfig */;
+			baseConfigurationReference = F7A19D57F63655CE3E0936FA /* Pods-Survey.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -973,44 +1174,29 @@
 			};
 			name = Production;
 		};
-		04E628FA290905AE000032C8 /* Production */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3575C5B4990483C0C4E02F1 /* Pods-SurveyUnitTests.production.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUnitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Survey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Survey";
-			};
-			name = Production;
-		};
-		04E628FB290905AE000032C8 /* Production */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D446F0A578F9E923173D7EDF /* Pods-Survey-SurveyUITests.production.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = asif.com.SurveyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Survey;
-			};
-			name = Production;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		043A1189290AFE4700F53F4B /* Build configuration list for PBXNativeTarget "SurveyUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043A118A290AFE4700F53F4B /* Debug */,
+				043A118B290AFE4700F53F4B /* Staging */,
+				043A118C290AFE4700F53F4B /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		043A1199290AFE7700F53F4B /* Build configuration list for PBXNativeTarget "SurveyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043A119A290AFE7700F53F4B /* Debug */,
+				043A119B290AFE7700F53F4B /* Staging */,
+				043A119C290AFE7700F53F4B /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
 		04BB8A4C2907FACB00CAD4E5 /* Build configuration list for PBXProject "Survey" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1027,26 +1213,6 @@
 				04BB8A602907FACD00CAD4E5 /* Debug */,
 				04BB8A612907FACD00CAD4E5 /* Staging */,
 				04E628F9290905AE000032C8 /* Production */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Production;
-		};
-		04BB8A7C2908068400CAD4E5 /* Build configuration list for PBXNativeTarget "SurveyUnitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04BB8A7D2908068400CAD4E5 /* Debug */,
-				04BB8A7E2908068400CAD4E5 /* Staging */,
-				04E628FA290905AE000032C8 /* Production */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Production;
-		};
-		04BB8A8B290806B100CAD4E5 /* Build configuration list for PBXNativeTarget "SurveyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04BB8A8C290806B100CAD4E5 /* Debug */,
-				04BB8A8D290806B100CAD4E5 /* Staging */,
-				04E628FB290905AE000032C8 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Production;
