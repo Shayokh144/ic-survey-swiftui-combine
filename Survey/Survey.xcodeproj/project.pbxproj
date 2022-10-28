@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */; };
 		043A1194290AFE7700F53F4B /* SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1193290AFE7700F53F4B /* SurveyUITests.swift */; };
-		047B28E6290A772A005D615C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B28E5290A772A005D615C /* Images.swift */; };
+		047B28E6290A772A005D615C /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B28E5290A772A005D615C /* ImageResource.swift */; };
+		049F6F10290B8D7C000C947F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F0F290B8D7C000C947F /* R.generated.swift */; };
+		049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F12290B8EEA000C947F /* Typealiases.swift */; };
+		049F6F17290B93B7000C947F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F16290B93B7000C947F /* OverlayView.swift */; };
 		04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */; };
 		04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB8A582907FACD00CAD4E5 /* Assets.xcassets */; };
 		04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* SplashView.swift */; };
@@ -42,8 +45,10 @@
 		043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUnitTests.swift; sourceTree = "<group>"; };
 		043A1191290AFE7700F53F4B /* SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A1193290AFE7700F53F4B /* SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUITests.swift; sourceTree = "<group>"; };
-		047B28E5290A772A005D615C /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		0489B4833F3AD0F9AE546AD5 /* Pods-Survey.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey.staging.xcconfig"; path = "Target Support Files/Pods-Survey/Pods-Survey.staging.xcconfig"; sourceTree = "<group>"; };
+		047B28E5290A772A005D615C /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		049F6F0F290B8D7C000C947F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		049F6F12290B8EEA000C947F /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		049F6F16290B93B7000C947F /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		04BB8A512907FACB00CAD4E5 /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApp.swift; sourceTree = "<group>"; };
 		04BB8A582907FACD00CAD4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,28 +99,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040102352909689E001332CF /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				04010236290968AD001332CF /* Rswift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		04010236290968AD001332CF /* Rswift */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rswift;
-			sourceTree = "<group>";
-		};
-		04010237290968EE001332CF /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		042B06B02909241700477605 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +121,63 @@
 				043A1193290AFE7700F53F4B /* SurveyUITests.swift */,
 			);
 			path = SurveyUITests;
+			sourceTree = "<group>";
+		};
+		049F6F0B290B870C000C947F /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				049F6F0D290B871E000C947F /* Helper */,
+				049F6F0C290B8717000C947F /* Extensions */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		049F6F0C290B8717000C947F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		049F6F0D290B871E000C947F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				049F6F11290B8EDA000C947F /* Typealiases */,
+				049F6F0E290B873A000C947F /* Rswift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		049F6F0E290B873A000C947F /* Rswift */ = {
+			isa = PBXGroup;
+			children = (
+				049F6F0F290B8D7C000C947F /* R.generated.swift */,
+			);
+			path = Rswift;
+			sourceTree = "<group>";
+		};
+		049F6F11290B8EDA000C947F /* Typealiases */ = {
+			isa = PBXGroup;
+			children = (
+				049F6F12290B8EEA000C947F /* Typealiases.swift */,
+			);
+			path = Typealiases;
+			sourceTree = "<group>";
+		};
+		049F6F14290B939B000C947F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				049F6F15290B93A4000C947F /* Overlay */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		049F6F15290B93A4000C947F /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				049F6F16290B93B7000C947F /* OverlayView.swift */,
+			);
+			path = Overlay;
 			sourceTree = "<group>";
 		};
 		04BB8A482907FACB00CAD4E5 = {
@@ -185,7 +225,7 @@
 		04BB8A632907FCDC00CAD4E5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				04BB8A6F2908032400CAD4E5 /* Supports */,
+				049F6F0B290B870C000C947F /* Supports */,
 				04BB8A6B2908027300CAD4E5 /* Presentation */,
 				04BB8A6A2908024F00CAD4E5 /* Domain */,
 				04BB8A692908024100CAD4E5 /* Data */,
@@ -199,7 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				04BB8A652907FF8600CAD4E5 /* Assets */,
-				047B28E5290A772A005D615C /* Images.swift */,
+				047B28E5290A772A005D615C /* ImageResource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -252,6 +292,7 @@
 		04BB8A6B2908027300CAD4E5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				049F6F14290B939B000C947F /* Views */,
 				04BB8A662908018700CAD4E5 /* Modules */,
 			);
 			path = Presentation;
@@ -263,15 +304,6 @@
 				04BB8A6D290802E600CAD4E5 /* SplashView.swift */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		04BB8A6F2908032400CAD4E5 /* Supports */ = {
-			isa = PBXGroup;
-			children = (
-				04010237290968EE001332CF /* Extension */,
-				040102352909689E001332CF /* Helper */,
-			);
-			path = Supports;
 			sourceTree = "<group>";
 		};
 		04E628F32909003D000032C8 /* XCConfigs */ = {
@@ -358,9 +390,11 @@
 			buildConfigurationList = 04BB8A5F2907FACD00CAD4E5 /* Build configuration list for PBXNativeTarget "Survey" */;
 			buildPhases = (
 				229CD0371E0F2FC88459D0C0 /* [CP] Check Pods Manifest.lock */,
+				049F6F0A290B85C2000C947F /* Rswift */,
 				04BB8A4D2907FACB00CAD4E5 /* Sources */,
 				04BB8A4E2907FACB00CAD4E5 /* Frameworks */,
 				04BB8A4F2907FACB00CAD4E5 /* Resources */,
+				4FE6627B76FDA79A76520114 /* [CP] Embed Pods Frameworks */,
 				042B06B529092A1800477605 /* Swift Format */,
 				042B06B629092A6B00477605 /* Swift Lint */,
 			);
@@ -478,6 +512,26 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		049F6F0A290B85C2000C947F /* Rswift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Rswift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/$PROJECT_NAME/Sources/Supports/Helper/Rswift/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$PROJECT_NAME/Sources/Supports/Helper/Rswift/R.generated.swift\"\n";
+		};
 		04E3DD7CF9F89BEE5156A693 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,6 +591,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE6627B76FDA79A76520114 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Survey/Pods-Survey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Survey/Pods-Survey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Survey/Pods-Survey-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C42684E0A3D5DF4968EF35EC /* [CP] Check Pods Manifest.lock */ = {
@@ -602,7 +673,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E628FD29090A1E000032C8 /* Configuration.swift in Sources */,
-				047B28E6290A772A005D615C /* Images.swift in Sources */,
+				047B28E6290A772A005D615C /* ImageResource.swift in Sources */,
+				049F6F17290B93B7000C947F /* OverlayView.swift in Sources */,
+				049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */,
+				049F6F10290B8D7C000C947F /* R.generated.swift in Sources */,
 				04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */,
 				04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */,
 			);

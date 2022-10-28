@@ -13,6 +13,7 @@ target 'Survey' do
   use_frameworks!
 
   # Pods for Survey
+  pod 'R.swift'
 
   target 'SurveyUITests' do
     # Pods for testing

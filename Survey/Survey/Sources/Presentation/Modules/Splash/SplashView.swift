@@ -13,20 +13,17 @@ struct SplashView: View {
 
     var body: some View {
         ZStack {
-            Image(Images.splashBackground)
+            ImageAssets.splashBackground.imageView
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.top)
-            Image(Images.overlay)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.top)
-            Image(Images.logoWhite)
+            OverlayView.splashScreen.linearGradient
+            ImageAssets.logoWhite.imageView
                 .resizable()
                 .frame(width: 202.0, height: 48.0, alignment: .center)
                 .opacity(logoOpacity)
         }.onAppear {
-            withAnimation(.easeInOut(duration: 2.0)) {
+            withAnimation(.easeInOut(duration: 1.0).delay(1.0)) {
                 logoOpacity = 1.0
             }
         }
