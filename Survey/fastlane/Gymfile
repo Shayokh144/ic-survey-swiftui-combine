@@ -1,0 +1,23 @@
+# For more information about this configuration visit
+# https://docs.fastlane.tools/actions/gym/#gymfile
+
+# In general, you can use the options available
+# fastlane gym --help
+
+# Remove the # in front of the line to enable the option
+
+# scheme("Example")
+
+# sdk("iphoneos9.0")
+
+scheme("SurveyStaging") # projects scheme name
+workspace("Survey.xcworkspace")
+output_directory("./fastlane/output")
+derived_data_path("./fastlane/derived_data")
+build_path("./fastlane/build")
+clean(true)
+output_name("Survey")
+include_bitcode(false)
+include_symbols(false)
+result_bundle(true)
+export_xcargs("-allowProvisioningUpdates")
