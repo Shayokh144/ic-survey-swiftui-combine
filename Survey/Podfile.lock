@@ -1,5 +1,50 @@
 PODS:
+  - FirebaseAppDistribution (0.9.3):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleDataTransport (~> 7.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+  - FirebaseCore (6.10.4):
+    - FirebaseCoreDiagnostics (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+  - FirebaseCoreDiagnostics (1.7.0):
+    - GoogleDataTransport (~> 7.4)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+    - nanopb (~> 1.30906.0)
+  - FirebaseInstallations (1.7.0):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - PromisesObjC (~> 1.2)
+  - GoogleDataTransport (7.5.1):
+    - nanopb (~> 1.30906.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.7.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.7.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.7.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.7.2)"
+  - GoogleUtilities/Reachability (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.7.2):
+    - GoogleUtilities/Logger
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
   - Nimble (10.0.0)
+  - PromisesObjC (1.2.12)
   - Quick (5.0.1)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
@@ -8,6 +53,7 @@ PODS:
   - SwiftLint (0.49.1)
 
 DEPENDENCIES:
+  - FirebaseAppDistribution
   - Nimble
   - Quick
   - R.swift
@@ -16,7 +62,15 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - FirebaseAppDistribution
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseInstallations
+    - GoogleDataTransport
+    - GoogleUtilities
+    - nanopb
     - Nimble
+    - PromisesObjC
     - Quick
     - R.swift
     - R.swift.Library
@@ -24,13 +78,21 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  FirebaseAppDistribution: 3b615c5fba5953351c5c96ca03217d15b0ee85d2
+  FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
+  FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
+  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
+  GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
+  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftFormat: 2402d29b26746f169cce5454d5af88314cbb2e35
   SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
 
-PODFILE CHECKSUM: 912e1e714b5ab31cea41d30d127dd4f3a33fb846
+PODFILE CHECKSUM: 3bc432e8227cf66116ebf20b09a0385f33c7f540
 
 COCOAPODS: 1.11.3

@@ -17,6 +17,9 @@
 		04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB8A582907FACD00CAD4E5 /* Assets.xcassets */; };
 		04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* SplashView.swift */; };
 		04E628FD29090A1E000032C8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E628FC29090A1E000032C8 /* Configuration.swift */; };
+		04FCA4C7291009EC009F3513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA4C6291009EC009F3513 /* GoogleService-Info.plist */; };
+		04FCA4C8291009EC009F3513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA4C6291009EC009F3513 /* GoogleService-Info.plist */; };
+		04FCA4C9291009EC009F3513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA4C6291009EC009F3513 /* GoogleService-Info.plist */; };
 		B2EDBB866438B03BA3972F58 /* Pods_Survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C6E57CED78524A86770EC /* Pods_Survey.framework */; };
 		BBE54A6504DC96FF37ED3FF6 /* Pods_Survey_SurveyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E99DEB6EBC0FFEEBD980C4F /* Pods_Survey_SurveyUITests.framework */; };
 		C8DFF50631C1B3E35591A760 /* Pods_SurveyUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF33291D6447BC60A34F59C /* Pods_SurveyUnitTests.framework */; };
@@ -57,6 +60,7 @@
 		04E6290029090E15000032C8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		04E6290129090E26000032C8 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		04E6290229090E3D000032C8 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		04FCA4C6291009EC009F3513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E99DEB6EBC0FFEEBD980C4F /* Pods_Survey_SurveyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survey_SurveyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4E09C3B0D7B286C3B3A59B /* Pods-Survey-SurveyUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey-SurveyUITests.staging.xcconfig"; path = "Target Support Files/Pods-Survey-SurveyUITests/Pods-Survey-SurveyUITests.staging.xcconfig"; sourceTree = "<group>"; };
 		5661B33393EDE59046BD72D2 /* Pods-SurveyUnitTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveyUnitTests.production.xcconfig"; path = "Target Support Files/Pods-SurveyUnitTests/Pods-SurveyUnitTests.production.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		042B06B02909241700477605 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
+				04FCA4C6291009EC009F3513 /* GoogleService-Info.plist */,
 				042B06B3290924AF00477605 /* Info.plist */,
 			);
 			path = Plists;
@@ -455,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FCA4C8291009EC009F3513 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FCA4C9291009EC009F3513 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */,
+				04FCA4C7291009EC009F3513 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1133,6 +1141,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Survey/Resources/Assets\"";
@@ -1154,6 +1163,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.nimblehq.taher.survey.ic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1166,6 +1176,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Survey/Resources/Assets\"";
@@ -1187,6 +1198,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.nimblehq.taher.survey.ic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1256,6 +1268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Survey/Resources/Assets\"";
@@ -1277,6 +1290,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.nimblehq.taher.survey.ic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
