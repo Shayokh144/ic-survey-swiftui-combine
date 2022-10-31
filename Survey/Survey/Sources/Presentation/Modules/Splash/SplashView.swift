@@ -9,10 +9,23 @@ import SwiftUI
 
 struct SplashView: View {
 
+    @State private var logoOpacity = 0.0
+
     var body: some View {
         ZStack {
-            Color(.systemTeal)
-            Text("Survey App")
+            ImageAssets.splashBackground.imageView
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.top)
+            OverlayView.splashScreen.linearGradient
+            ImageAssets.logoWhite.imageView
+                .resizable()
+                .frame(width: 202.0, height: 48.0, alignment: .center)
+                .opacity(logoOpacity)
+        }.onAppear {
+            withAnimation(.easeInOut(duration: 1.0).delay(1.0)) {
+                logoOpacity = 1.0
+            }
         }
     }
 }

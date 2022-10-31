@@ -4,5 +4,9 @@
 <dict>
 	<key>SURVEY_API_BASE_URL</key>
 	<string>$(SURVEY_API_BASE_URL)</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
