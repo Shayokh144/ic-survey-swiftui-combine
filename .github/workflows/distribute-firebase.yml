@@ -2,9 +2,7 @@ name: Distribute to Firebase
 
 on:
   push:
-  pull_request:
-    types: [opened, reopened, edited, synchronize]
-
+    branches: [ main ]
 jobs:
   review_pull_request:
     name: Distribute IPA using Firebase

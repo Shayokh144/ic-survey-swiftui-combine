@@ -42,7 +42,6 @@ platform :ios do
     )
 
     match(type: "adhoc")
-    #match(type: "development")
 
     build_app(
       workspace: "Survey.xcworkspace",
@@ -53,7 +52,6 @@ platform :ios do
 
     firebase_app_distribution(
       app: "1:112003136443:ios:fc7ef59cf7bdcc44cca29e",
-      #firebase_cli_token: "1//0gwLWPD8CpWOyCgYIARAAGBASNwF-L9IrjIctiePEDs56A1DBUfomW3baDVIGyEg5e3mhBenTq-7aAgTPKBJ8Ep7XVHdWysJ2gQY",
       ipa_path: "./fastlane/result/Survey.ipa",
       groups: "survey-app-testers",
       release_notes: "First release"
