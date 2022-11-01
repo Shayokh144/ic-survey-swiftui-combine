@@ -40,22 +40,20 @@
       </CodeCoverageTargets>
       <Testables>
          <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04186B26290AF53800EFED5F"
+               BlueprintIdentifier = "043A1182290AFE4700F53F4B"
                BuildableName = "SurveyUnitTests.xctest"
                BlueprintName = "SurveyUnitTests"
                ReferencedContainer = "container:Survey.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04186B37290AF61100EFED5F"
+               BlueprintIdentifier = "043A1190290AFE7700F53F4B"
                BuildableName = "SurveyUITests.xctest"
                BlueprintName = "SurveyUITests"
                ReferencedContainer = "container:Survey.xcodeproj">
@@ -64,7 +62,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Staging"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -85,7 +83,7 @@
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Staging"
+      buildConfiguration = "Production"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -102,10 +100,10 @@
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Staging">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Staging"
+      buildConfiguration = "Production"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
