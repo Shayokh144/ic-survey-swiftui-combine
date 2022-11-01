@@ -2,7 +2,7 @@ name: Automatic PR Review with Danger and Fastlane
 
 on:
   pull_request:
-    types: [opened, reopened, edited, synchronize]
+    types: [opened, reopened, synchronize]
 
 jobs:
   review_pull_request:
