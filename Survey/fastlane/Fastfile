@@ -32,18 +32,26 @@ platform :ios do
   end
 
   lane :distribute_firebase do
+    puts "APP_STORE_CONNECT_API_KEY_KEY_ID"
+    puts ENV['APP_STORE_CONNECT_API_KEY_KEY_ID']
     app_store_connect_api_key(
+      key_id: "TKJCMGPSYH",
+      issuer_id: "69a6de82-b7cb-47e3-e053-5b8c7c11a4d1",
+      key_content: "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JR1RBZ0VBTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSEJIa3dkd0lCQVFRZzNLUUdrS2cwK1p1dFIrZTMKbHhrWU5qc1FvUXFsbERLaTliR1hqYVRHcGYrZ0NnWUlLb1pJemowREFRZWhSQU5DQUFRR055cWg3a2RZV2F4bgo1LzF2MzFGcy91N2lYdmZqRHNSSDFXQUhQaDkrUTg1Qjh1SFVIc1Evcy9ZYXRLNWdCZjh4Y01lQW5wd0EzVm9RCk5ZV1JFRjI1Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0=",
       is_key_content_base64: true,
       in_house: true
     )
+
     match(type: "adhoc")
     match(type: "development")
+
     build_app(
       workspace: "Survey.xcworkspace",
       scheme: "SurveyStaging",
       export_method: "ad-hoc",
       output_directory: "./fastlane/result"
     )
+
     firebase_app_distribution(
       app: "1:112003136443:ios:fc7ef59cf7bdcc44cca29e",
       #firebase_cli_token: "1//0gwLWPD8CpWOyCgYIARAAGBASNwF-L9IrjIctiePEDs56A1DBUfomW3baDVIGyEg5e3mhBenTq-7aAgTPKBJ8Ep7XVHdWysJ2gQY",
@@ -51,5 +59,6 @@ platform :ios do
       groups: "survey-app-testers",
       release_notes: "First release"
     )
+
   end
 end
