@@ -1,4 +1,4 @@
-git_url("https://github.com/nimblehq/match-creator.git")
+git_url("git@github.com:nimblehq/match-certificates.git")
 
 storage_mode("git")
 

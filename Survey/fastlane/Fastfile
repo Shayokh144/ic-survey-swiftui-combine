@@ -21,6 +21,7 @@ platform :ios do
     FileUtils.rm_rf('derived_data')
     FileUtils.rm_rf('xcov_output')
     FileUtils.rm_rf('build')
+    FileUtils.rm_rf('result')
   end
 
   lane :build_and_test do
@@ -35,14 +36,14 @@ platform :ios do
       workspace: "Survey.xcworkspace",
       scheme: "SurveyStaging",
       export_method: "ad-hoc",
-      output_directory: "./result"
+      output_directory: "./fastlane/result"
     )
     firebase_app_distribution(
       app: "1:112003136443:ios:fc7ef59cf7bdcc44cca29e",
-      firebase_cli_token: "1//0gwLWPD8CpWOyCgYIARAAGBASNwF-L9IrjIctiePEDs56A1DBUfomW3baDVIGyEg5e3mhBenTq-7aAgTPKBJ8Ep7XVHdWysJ2gQY",
-      ipa_path: "./result/Survey.ipa",
+      #firebase_cli_token: "1//0gwLWPD8CpWOyCgYIARAAGBASNwF-L9IrjIctiePEDs56A1DBUfomW3baDVIGyEg5e3mhBenTq-7aAgTPKBJ8Ep7XVHdWysJ2gQY",
+      ipa_path: "./fastlane/result/Survey.ipa",
       groups: "survey-app-testers",
-      release_notes: "Lots of amazing new features to test out!"
+      release_notes: "First release"
     )
   end
 end
