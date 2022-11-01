@@ -48,13 +48,6 @@ jobs:
     
     - name: Install Pods Dependencies
       run: bundle exec pod install
-
-    - name: Match adhoc profile
-      run: bundle exec fastlane match adhoc
-      env:
-        MATCH_PASSWORD: ${{ secrets.MATCH_REPO_PASS }}
-        FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_PASSWORD }}
-        FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
    
     - name: Clean up previous code coverage report
       run: bundle exec fastlane clean_dirs
@@ -62,7 +55,11 @@ jobs:
     - name: Distribute ipa
       run: bundle exec fastlane distribute_firebase
       env:
+        APP_STORE_CONNECT_API_KEY_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_KEY_ID }}
+        APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_ISSUER_ID }}
+        APP_STORE_CONNECT_API_KEY_IS_KEY_CONTENT_BASE64: ${{ secrets.AUTH_KEY_P8 }}
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_PASSWORD }}
         FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
+        MATCH_PASSWORD: ${{ secrets.MATCH_REPO_PASS }}
         CI: true

@@ -32,6 +32,12 @@ platform :ios do
   end
 
   lane :distribute_firebase do
+    app_store_connect_api_key(
+      is_key_content_base64: true,
+      in_house: true
+    )
+    match(type: "adhoc")
+    match(type: "development")
     build_app(
       workspace: "Survey.xcworkspace",
       scheme: "SurveyStaging",
