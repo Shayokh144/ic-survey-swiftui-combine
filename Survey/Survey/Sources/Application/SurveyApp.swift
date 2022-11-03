@@ -26,7 +26,7 @@ struct SurveyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            AppCoordinator(viewModel: AppCoordinatorViewModel())
         }
     }
 }

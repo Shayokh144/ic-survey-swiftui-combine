@@ -9,13 +9,32 @@
 /* Begin PBXBuildFile section */
 		043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */; };
 		043A1194290AFE7700F53F4B /* SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1193290AFE7700F53F4B /* SurveyUITests.swift */; };
+		047130AE2913863900E83A9A /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130AD2913863900E83A9A /* ColorResource.swift */; };
+		047130B12913A5F800E83A9A /* NeuzeitSLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 047130B02913A5F800E83A9A /* NeuzeitSLTStd-Book.otf */; };
+		047130B32913A67D00E83A9A /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130B22913A67D00E83A9A /* FontResource.swift */; };
+		047130B52913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 047130B42913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf */; };
+		047130B82913B9E200E83A9A /* EntryViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130B72913B9E200E83A9A /* EntryViewType.swift */; };
+		047130BB2913BD1800E83A9A /* AppCoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130BA2913BD1700E83A9A /* AppCoordinatorViewModel.swift */; };
+		047130BD2913BD5500E83A9A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130BC2913BD5500E83A9A /* AppCoordinator.swift */; };
+		047130C02913BF6600E83A9A /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130BF2913BF6600E83A9A /* EmailTextField.swift */; };
+		047130C42913C15E00E83A9A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 047130C62913C15E00E83A9A /* Localizable.strings */; };
+		047130C82913C31100E83A9A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130C72913C31100E83A9A /* String+Extension.swift */; };
+		047130CA2913C4DC00E83A9A /* PasswordSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130C92913C4DC00E83A9A /* PasswordSecureTextField.swift */; };
+		047130CD2913C64A00E83A9A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130CC2913C64A00E83A9A /* LoginButton.swift */; };
+		047130D02913C96700E83A9A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130CF2913C96700E83A9A /* SplashView.swift */; };
 		047B28E6290A772A005D615C /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B28E5290A772A005D615C /* ImageResource.swift */; };
+		048FC2C329127B7900B52907 /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = 048FC2C229127B7900B52907 /* FlowStacks */; };
+		048FC2C529127D8A00B52907 /* AppScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C429127D8A00B52907 /* AppScreenType.swift */; };
+		048FC2C7291283D000B52907 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C6291283D000B52907 /* EntryViewModel.swift */; };
+		048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C829128A6300B52907 /* AnimationCompletionObserverModifier.swift */; };
+		048FC2CB29128AF700B52907 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2CA29128AF600B52907 /* View+Extension.swift */; };
+		048FC2CE29128C3A00B52907 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2CD29128C3A00B52907 /* LoginView.swift */; };
 		049F6F10290B8D7C000C947F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F0F290B8D7C000C947F /* R.generated.swift */; };
 		049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F12290B8EEA000C947F /* Typealiases.swift */; };
 		049F6F17290B93B7000C947F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F16290B93B7000C947F /* OverlayView.swift */; };
 		04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */; };
 		04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB8A582907FACD00CAD4E5 /* Assets.xcassets */; };
-		04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* SplashView.swift */; };
+		04BB8A6E290802E600CAD4E5 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* EntryView.swift */; };
 		04E628FD29090A1E000032C8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E628FC29090A1E000032C8 /* Configuration.swift */; };
 		04FCA4C7291009EC009F3513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA4C6291009EC009F3513 /* GoogleService-Info.plist */; };
 		04FCA4C8291009EC009F3513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA4C6291009EC009F3513 /* GoogleService-Info.plist */; };
@@ -48,14 +67,32 @@
 		043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUnitTests.swift; sourceTree = "<group>"; };
 		043A1191290AFE7700F53F4B /* SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A1193290AFE7700F53F4B /* SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUITests.swift; sourceTree = "<group>"; };
+		047130AD2913863900E83A9A /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
+		047130B02913A5F800E83A9A /* NeuzeitSLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuzeitSLTStd-Book.otf"; sourceTree = "<group>"; };
+		047130B22913A67D00E83A9A /* FontResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontResource.swift; sourceTree = "<group>"; };
+		047130B42913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuzeitSLTStd-BookHeavy.otf"; sourceTree = "<group>"; };
+		047130B72913B9E200E83A9A /* EntryViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewType.swift; sourceTree = "<group>"; };
+		047130BA2913BD1700E83A9A /* AppCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorViewModel.swift; sourceTree = "<group>"; };
+		047130BC2913BD5500E83A9A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		047130BF2913BF6600E83A9A /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		047130C52913C15E00E83A9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		047130C72913C31100E83A9A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		047130C92913C4DC00E83A9A /* PasswordSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecureTextField.swift; sourceTree = "<group>"; };
+		047130CC2913C64A00E83A9A /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		047130CF2913C96700E83A9A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		047B28E5290A772A005D615C /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		048FC2C429127D8A00B52907 /* AppScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenType.swift; sourceTree = "<group>"; };
+		048FC2C6291283D000B52907 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
+		048FC2C829128A6300B52907 /* AnimationCompletionObserverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCompletionObserverModifier.swift; sourceTree = "<group>"; };
+		048FC2CA29128AF600B52907 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		048FC2CD29128C3A00B52907 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		049F6F0F290B8D7C000C947F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		049F6F12290B8EEA000C947F /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		049F6F16290B93B7000C947F /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		04BB8A512907FACB00CAD4E5 /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApp.swift; sourceTree = "<group>"; };
 		04BB8A582907FACD00CAD4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04BB8A6D290802E600CAD4E5 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		04BB8A6D290802E600CAD4E5 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		04E628FC29090A1E000032C8 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		04E6290029090E15000032C8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		04E6290129090E26000032C8 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
@@ -97,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EDBB866438B03BA3972F58 /* Pods_Survey.framework in Frameworks */,
+				048FC2C329127B7900B52907 /* FlowStacks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +166,74 @@
 			path = SurveyUITests;
 			sourceTree = "<group>";
 		};
+		047130AF2913A5C500E83A9A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				047130B42913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf */,
+				047130B02913A5F800E83A9A /* NeuzeitSLTStd-Book.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		047130B62913B9C800E83A9A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				047130B72913B9E200E83A9A /* EntryViewType.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		047130B92913BCBA00E83A9A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				048FC2C429127D8A00B52907 /* AppScreenType.swift */,
+				047130BA2913BD1700E83A9A /* AppCoordinatorViewModel.swift */,
+				047130BC2913BD5500E83A9A /* AppCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		047130BE2913BF4900E83A9A /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				047130BF2913BF6600E83A9A /* EmailTextField.swift */,
+				047130C92913C4DC00E83A9A /* PasswordSecureTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		047130C12913C12900E83A9A /* LocalizedStrings */ = {
+			isa = PBXGroup;
+			children = (
+				047130C62913C15E00E83A9A /* Localizable.strings */,
+			);
+			path = LocalizedStrings;
+			sourceTree = "<group>";
+		};
+		047130CB2913C63400E83A9A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				047130CC2913C64A00E83A9A /* LoginButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		047130CE2913C95700E83A9A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				047130CF2913C96700E83A9A /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		048FC2CC29128C0100B52907 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				048FC2CD29128C3A00B52907 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		049F6F0B290B870C000C947F /* Supports */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +246,9 @@
 		049F6F0C290B8717000C947F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				048FC2C829128A6300B52907 /* AnimationCompletionObserverModifier.swift */,
+				048FC2CA29128AF600B52907 /* View+Extension.swift */,
+				047130C72913C31100E83A9A /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +281,9 @@
 		049F6F14290B939B000C947F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				047130CE2913C95700E83A9A /* Splash */,
+				047130CB2913C63400E83A9A /* Buttons */,
+				047130BE2913BF4900E83A9A /* TextFields */,
 				049F6F15290B93A4000C947F /* Overlay */,
 			);
 			path = Views;
@@ -230,6 +342,7 @@
 		04BB8A632907FCDC00CAD4E5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				047130B92913BCBA00E83A9A /* Navigation */,
 				049F6F0B290B870C000C947F /* Supports */,
 				04BB8A6B2908027300CAD4E5 /* Presentation */,
 				04BB8A6A2908024F00CAD4E5 /* Domain */,
@@ -243,8 +356,12 @@
 		04BB8A642907FCE400CAD4E5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				047130C12913C12900E83A9A /* LocalizedStrings */,
+				047130AF2913A5C500E83A9A /* Fonts */,
 				04BB8A652907FF8600CAD4E5 /* Assets */,
 				047B28E5290A772A005D615C /* ImageResource.swift */,
+				047130AD2913863900E83A9A /* ColorResource.swift */,
+				047130B22913A67D00E83A9A /* FontResource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -260,7 +377,8 @@
 		04BB8A662908018700CAD4E5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				04BB8A6C2908029E00CAD4E5 /* Splash */,
+				048FC2CC29128C0100B52907 /* Login */,
+				04BB8A6C2908029E00CAD4E5 /* Entry */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -297,18 +415,20 @@
 		04BB8A6B2908027300CAD4E5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				047130B62913B9C800E83A9A /* Constants */,
 				049F6F14290B939B000C947F /* Views */,
 				04BB8A662908018700CAD4E5 /* Modules */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		04BB8A6C2908029E00CAD4E5 /* Splash */ = {
+		04BB8A6C2908029E00CAD4E5 /* Entry */ = {
 			isa = PBXGroup;
 			children = (
-				04BB8A6D290802E600CAD4E5 /* SplashView.swift */,
+				04BB8A6D290802E600CAD4E5 /* EntryView.swift */,
+				048FC2C6291283D000B52907 /* EntryViewModel.swift */,
 			);
-			path = Splash;
+			path = Entry;
 			sourceTree = "<group>";
 		};
 		04E628F32909003D000032C8 /* XCConfigs */ = {
@@ -408,6 +528,9 @@
 			dependencies = (
 			);
 			name = Survey;
+			packageProductDependencies = (
+				048FC2C229127B7900B52907 /* FlowStacks */,
+			);
 			productName = Survey;
 			productReference = 04BB8A512907FACB00CAD4E5 /* Survey.app */;
 			productType = "com.apple.product-type.application";
@@ -444,6 +567,9 @@
 				Base,
 			);
 			mainGroup = 04BB8A482907FACB00CAD4E5;
+			packageReferences = (
+				048FC2C129127B7900B52907 /* XCRemoteSwiftPackageReference "FlowStacks" */,
+			);
 			productRefGroup = 04BB8A522907FACB00CAD4E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -476,6 +602,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047130C42913C15E00E83A9A /* Localizable.strings in Resources */,
+				047130B12913A5F800E83A9A /* NeuzeitSLTStd-Book.otf in Resources */,
+				047130B52913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf in Resources */,
 				04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */,
 				04FCA4C7291009EC009F3513 /* GoogleService-Info.plist in Resources */,
 			);
@@ -681,12 +810,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E628FD29090A1E000032C8 /* Configuration.swift in Sources */,
+				047130D02913C96700E83A9A /* SplashView.swift in Sources */,
 				047B28E6290A772A005D615C /* ImageResource.swift in Sources */,
+				047130BD2913BD5500E83A9A /* AppCoordinator.swift in Sources */,
+				047130C82913C31100E83A9A /* String+Extension.swift in Sources */,
 				049F6F17290B93B7000C947F /* OverlayView.swift in Sources */,
+				048FC2C7291283D000B52907 /* EntryViewModel.swift in Sources */,
+				047130B32913A67D00E83A9A /* FontResource.swift in Sources */,
+				047130CA2913C4DC00E83A9A /* PasswordSecureTextField.swift in Sources */,
+				048FC2C529127D8A00B52907 /* AppScreenType.swift in Sources */,
+				048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */,
+				048FC2CE29128C3A00B52907 /* LoginView.swift in Sources */,
 				049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */,
+				047130BB2913BD1800E83A9A /* AppCoordinatorViewModel.swift in Sources */,
 				049F6F10290B8D7C000C947F /* R.generated.swift in Sources */,
+				047130AE2913863900E83A9A /* ColorResource.swift in Sources */,
 				04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */,
-				04BB8A6E290802E600CAD4E5 /* SplashView.swift in Sources */,
+				047130CD2913C64A00E83A9A /* LoginButton.swift in Sources */,
+				047130C02913BF6600E83A9A /* EmailTextField.swift in Sources */,
+				048FC2CB29128AF700B52907 /* View+Extension.swift in Sources */,
+				047130B82913B9E200E83A9A /* EntryViewType.swift in Sources */,
+				04BB8A6E290802E600CAD4E5 /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +848,17 @@
 			targetProxy = 043A1197290AFE7700F53F4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		047130C62913C15E00E83A9A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047130C52913C15E00E83A9A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		043A118A290AFE4700F53F4B /* Debug */ = {
@@ -1380,6 +1535,25 @@
 			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		048FC2C129127B7900B52907 /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		048FC2C229127B7900B52907 /* FlowStacks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048FC2C129127B7900B52907 /* XCRemoteSwiftPackageReference "FlowStacks" */;
+			productName = FlowStacks;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04BB8A492907FACB00CAD4E5 /* Project object */;
 }

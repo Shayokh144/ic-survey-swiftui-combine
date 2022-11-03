@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Survey
+
+  Created by Taher on 3/11/22.
+  
+*/
+
+"email_placeholder" = "Email";
+"password_placeholder" = "Password";
+"login_button" = "Log in";
+"login_failed_title" = "Login failed!";
+"login_failed_description" = "Email or password is wrong, please try again.";
