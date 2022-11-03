@@ -14,6 +14,7 @@ target 'Survey' do
 
   # Pods for Survey
   pod 'R.swift'
+  pod 'FirebaseAppDistribution'
 
   target 'SurveyUITests' do
     # Pods for testing

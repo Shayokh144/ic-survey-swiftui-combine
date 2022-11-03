@@ -20,6 +20,8 @@ platform :ios do
   lane :clean_dirs do
     FileUtils.rm_rf('derived_data')
     FileUtils.rm_rf('xcov_output')
+    FileUtils.rm_rf('build')
+    FileUtils.rm_rf('result')
   end
 
   lane :build_and_test do
@@ -27,5 +29,33 @@ platform :ios do
     run_tests
     puts "SHARED VAR VALUE"
     puts Actions.lane_context[SharedValues::SCAN_GENERATED_XCRESULT_PATH]
+  end
+
+  lane :distribute_firebase do
+    setup_ci
+    app_store_connect_api_key(
+      key_id: ENV['APP_STORE_CONNECT_API_KEY_KEY_ID'],
+      issuer_id: ENV['APP_STORE_CONNECT_API_KEY_ISSUER_ID'],
+      key_content: ENV['APP_STORE_CONNECT_API_KEY_IS_KEY_CONTENT_BASE64'],
+      is_key_content_base64: true,
+      in_house: true
+    )
+
+    match(type: "adhoc")
+
+    build_app(
+      workspace: "Survey.xcworkspace",
+      scheme: "SurveyStaging",
+      export_method: "ad-hoc",
+      output_directory: "./fastlane/result"
+    )
+
+    firebase_app_distribution(
+      app: "1:112003136443:ios:fc7ef59cf7bdcc44cca29e",
+      ipa_path: "./fastlane/result/Survey.ipa",
+      groups: "survey-app-testers",
+      release_notes: "First release"
+    )
+
   end
 end
