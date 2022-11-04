@@ -1,0 +1,42 @@
+# General
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+
+
+## User settings
+Survey/xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+
+# CocoaPods
+Survey/Pods/
+
+# fastlane
+
+fastlane/README.md
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/xcov_output
+
+# Derived Data folder
+DerivedData

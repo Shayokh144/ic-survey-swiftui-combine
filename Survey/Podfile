@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+def testing_pods
+  pod 'Quick'
+  pod 'Nimble'
+  pod 'SwiftFormat/CLI'
+  pod 'SwiftLint'
+end
+
+target 'Survey' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Survey
+  pod 'R.swift'
+  pod 'FirebaseAppDistribution'
+
+  target 'SurveyUITests' do
+    # Pods for testing
+    testing_pods
+  end
+
+  target 'SurveyUnitTests' do
+    inherit! :search_paths
+    # Pods for testing
+    testing_pods
+  end
+
+end
