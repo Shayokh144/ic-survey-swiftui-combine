@@ -26,10 +26,12 @@ struct PasswordSecureTextField: View {
         .foregroundColor(.white)
         .background(ColorAssets.textFieldBackground.color)
         .cornerRadius(12.0)
-        .frame(width: 327.0, height: 56.0)
+        .frame(width: 327.0, height: 56.0, alignment: .center)
         .onTapGesture {
             if self.editingMode == false {
-                self.editingMode = true
+                withAnimation(.linear(duration: 0.2)) {
+                    self.editingMode = true
+                }
             }
         }
     }

@@ -19,45 +19,48 @@ struct LoginView: View {
     @State var password: String = ""
 
     var body: some View {
-        ZStack {
-            ImageAssets.loginBackground.imageView
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
-            OverlayView.loginScreen.linearGradient
-            ImageAssets.logoWhite.imageView
-                .resizable()
-                .frame(width: 202.0, height: 48.0, alignment: .center)
-                .scaleEffect(logoScaleEffect)
-                .offset(y: logoOffset)
-            VStack(spacing: 20.0) {
-                EmailTextField(email: $email, editingMode: $editingMode)
-                PasswordSecureTextField(password: $password, editingMode: $editingMode)
-                Button(
-                    action: {
-                        // To-Do: send action to viewmodel
-                        isLoginFailed = true
-                    },
-                    label: {
-                        LoginButton()
-                    }
-                )
-                .accessibilityIdentifier("loginButtonIdentifier")
+        GeometryReader { _ in
+            ZStack {
+                ImageAssets.loginBackground.imageView
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
+                OverlayView.loginScreen.linearGradient
+                ImageAssets.logoWhite.imageView
+                    .resizable()
+                    .frame(width: 202.0, height: 48.0, alignment: .center)
+                    .scaleEffect(logoScaleEffect)
+                    .offset(y: editingMode ? -340 : logoOffset)
+                VStack(alignment: .center, spacing: 20.0) {
+                    EmailTextField(email: $email, editingMode: $editingMode)
+                    PasswordSecureTextField(password: $password, editingMode: $editingMode)
+                    Button(
+                        action: {
+                            // To-Do: send action to viewmodel
+                            isLoginFailed = true
+                        },
+                        label: {
+                            LoginButton()
+                        }
+                    )
+                    .accessibilityIdentifier("loginButtonIdentifier")
+                }
+                .alert(isPresented: $isLoginFailed) { () -> Alert in
+                    Alert(
+                        title: Text(LocalizedTextAssets.localizable.login_failed_title()),
+                        message: Text(LocalizedTextAssets.localizable.login_failed_description())
+                    )
+                }
+                .offset(y: editingMode ? -140 : -60)
+                .opacity(loginViewOpacity)
             }
-            .alert(isPresented: $isLoginFailed) { () -> Alert in
-                Alert(
-                    title: Text(LocalizedTextAssets.localizable.login_failed_title()),
-                    message: Text(LocalizedTextAssets.localizable.login_failed_description())
-                )
+            .onAppear {
+                withAnimation(.easeInOut(duration: 1.0)) {
+                    loginViewOpacity = 1.0
+                    logoOffset = -300.0
+                    logoScaleEffect = 0.85
+                }
             }
-            .opacity(loginViewOpacity)
-        }
-        .onAppear {
-            withAnimation(.easeInOut(duration: 1.0)) {
-                loginViewOpacity = 1.0
-                logoOffset = -200.0
-                logoScaleEffect = 0.85
-            }
-        }
+        }.ignoresSafeArea(.keyboard, edges: .bottom)
     }
 }
