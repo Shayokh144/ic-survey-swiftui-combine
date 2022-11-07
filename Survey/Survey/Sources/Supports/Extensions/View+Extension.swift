@@ -24,7 +24,7 @@ extension View {
         ZStack(alignment: alignment) {
             placeholder()
                 .opacity(shouldShow ? 0.3 : 0.0)
-                .font(FontAssets.neuzeitSLTStdBook.font(size: 17.0))
+                .font(FontAssets.neuzeitSLTStdBook.regular())
             self
         }
     }

@@ -8,9 +8,9 @@
 import FlowStacks
 import SwiftUI
 
-struct AppCoordinator: View {
+struct AppView: View {
 
-    @ObservedObject var viewModel: AppCoordinatorViewModel
+    @ObservedObject var viewModel: AppViewModel
 
     var body: some View {
         NavigationView {

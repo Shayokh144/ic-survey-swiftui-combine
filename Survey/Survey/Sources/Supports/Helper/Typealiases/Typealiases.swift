@@ -11,4 +11,4 @@ import Foundation
 typealias ImageAssets = R.image
 typealias ColorAssets = R.color
 typealias FontAssets = R.font
-typealias LocalizedTextAssets = R.string
+typealias Localize = R.string.localizable

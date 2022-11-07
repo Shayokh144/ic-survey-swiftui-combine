@@ -8,6 +8,7 @@
 import Foundation
 
 enum EntryViewType {
+
     case splash
     case login
 }

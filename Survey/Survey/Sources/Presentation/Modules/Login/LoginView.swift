@@ -19,8 +19,11 @@ struct LoginView: View {
     @State var password: String = ""
 
     var body: some View {
+
         GeometryReader { _ in
+
             ZStack {
+
                 ImageAssets.loginBackground.imageView
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -32,11 +35,12 @@ struct LoginView: View {
                     .scaleEffect(logoScaleEffect)
                     .offset(y: editingMode ? -340 : logoOffset)
                 VStack(alignment: .center, spacing: 20.0) {
+
                     EmailTextField(email: $email, editingMode: $editingMode)
                     PasswordSecureTextField(password: $password, editingMode: $editingMode)
                     Button(
                         action: {
-                            // To-Do: send action to viewmodel
+                            // TODO: send action to viewmodel
                             isLoginFailed = true
                         },
                         label: {
@@ -47,8 +51,8 @@ struct LoginView: View {
                 }
                 .alert(isPresented: $isLoginFailed) { () -> Alert in
                     Alert(
-                        title: Text(LocalizedTextAssets.localizable.login_failed_title()),
-                        message: Text(LocalizedTextAssets.localizable.login_failed_description())
+                        title: Text(Localize.login_failed_title()),
+                        message: Text(Localize.login_failed_description())
                     )
                 }
                 .offset(y: editingMode ? -140 : -60)

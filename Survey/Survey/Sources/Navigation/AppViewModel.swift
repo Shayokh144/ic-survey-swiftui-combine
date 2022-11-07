@@ -8,7 +8,7 @@
 import FlowStacks
 import SwiftUI
 
-class AppCoordinatorViewModel: ObservableObject {
+class AppViewModel: ObservableObject {
 
     @Published var routes: Routes<AppScreenType>
 

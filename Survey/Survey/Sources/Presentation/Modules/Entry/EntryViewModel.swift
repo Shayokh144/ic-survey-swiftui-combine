@@ -12,10 +12,10 @@ class EntryViewModel: ObservableObject {
 
     @Published var viewType: EntryViewType = .splash
     var didFinishSplashAnimation = PassthroughSubject<Void, Never>()
-    let coordinator: AppCoordinatorViewModel
+    let coordinator: AppViewModel
     private var disposables = Set<AnyCancellable>()
 
-    init(coordinator: AppCoordinatorViewModel) {
+    init(coordinator: AppViewModel) {
         self.coordinator = coordinator
 
         didFinishSplashAnimation.sink { [weak self] _ in
@@ -26,6 +26,6 @@ class EntryViewModel: ObservableObject {
 
     private func goToNextView() {
         viewType = .login
-        // To-Do: add logic to check authentication and route accordingly
+        // TODO: add logic to check authentication and route accordingly
     }
 }

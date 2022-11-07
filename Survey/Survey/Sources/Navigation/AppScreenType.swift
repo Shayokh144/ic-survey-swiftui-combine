@@ -6,6 +6,7 @@
 //
 
 enum AppScreenType {
+
     case entry
     // TODO: will add survey types later
 }

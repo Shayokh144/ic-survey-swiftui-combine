@@ -9,11 +9,14 @@ import SwiftUI
 
 struct LoginButton: View {
     var body: some View {
-        Text(LocalizedTextAssets.localizable.login_button())
-            .font(FontAssets.neuzeitSLTStdBookHeavy.font(size: 17.0))
+
+        Text(Localize.login_button())
+            .font(FontAssets.neuzeitSLTStdBook.semiBold())
             .foregroundColor(.black)
-            .frame(width: 327.0, height: 56.0)
+            .frame(maxWidth: .infinity)
+            .frame(height: 56.0, alignment: .center)
             .background(Color.white)
-            .cornerRadius(10.0)
+            .cornerRadius(12.0)
+            .padding(.horizontal, 24)
     }
 }

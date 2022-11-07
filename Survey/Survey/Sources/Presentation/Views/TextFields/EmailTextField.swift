@@ -13,17 +13,19 @@ struct EmailTextField: View {
     @Binding var editingMode: Bool
 
     var body: some View {
+
         TextField(String.empty, text: $email).placeholder(when: email.isEmpty) {
-            Text(LocalizedTextAssets.localizable.email_placeholder())
+            Text(Localize.email_placeholder())
                 .foregroundColor(.gray)
         }
-        .font(FontAssets.neuzeitSLTStdBook.font(size: 17.0))
+        .font(Font(UIFont.regular(ofSize: UIFont.FontSize.regular)))
         .accessibilityIdentifier("emailTextFieldId")
         .padding()
         .foregroundColor(.white)
         .background(ColorAssets.textFieldBackground.color)
         .cornerRadius(12.0)
-        .frame(width: 327.0, height: 56.0, alignment: .center)
+        .frame(height: 56.0, alignment: .center)
+        .padding(.horizontal, 24)
         .onTapGesture {
             if self.editingMode == false {
                 withAnimation(.linear(duration: 0.2)) {
