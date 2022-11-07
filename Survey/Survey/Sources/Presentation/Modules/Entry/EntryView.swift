@@ -13,14 +13,17 @@ struct EntryView: View {
     @State var logoOpacity = 0.0
 
     var body: some View {
+
         switch viewModel.viewType {
         case .splash:
             SplashView(logoOpacity: $logoOpacity)
                 .onAnimationCompleted(for: logoOpacity) {
                     viewModel.didFinishSplashAnimation = true
                 }
-        case .login:
-            LoginView()
+        case let .login(viewModel):
+            LoginView(
+                viewModel: viewModel
+            )
         }
     }
 }

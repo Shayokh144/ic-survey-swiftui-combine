@@ -15,8 +15,8 @@ struct LoginView: View {
     @State private var loginViewOpacity = 0.0
     @State private var isLoginFailed = false
     @State var editingMode: Bool = false
-    @State var email: String = ""
-    @State var password: String = ""
+
+    @StateObject var viewModel: LoginViewModel
 
     var body: some View {
 
@@ -36,12 +36,13 @@ struct LoginView: View {
                     .offset(y: editingMode ? -340 : logoOffset)
                 VStack(alignment: .center, spacing: 20.0) {
 
-                    EmailTextField(email: $email, editingMode: $editingMode)
-                    PasswordSecureTextField(password: $password, editingMode: $editingMode)
+                    EmailTextField(email: $viewModel.email, editingMode: $editingMode)
+                    PasswordSecureTextField(password: $viewModel.password, editingMode: $editingMode)
                     Button(
                         action: {
                             // TODO: send action to viewmodel
-                            isLoginFailed = true
+                            isLoginFailed = false
+                            viewModel.didTapLoginButton.send()
                         },
                         label: {
                             LoginButton()

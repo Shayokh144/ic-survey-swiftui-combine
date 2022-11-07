@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias Parameters = [String: AnyHashable]
+// R.swift
 typealias ImageAssets = R.image
 typealias ColorAssets = R.color
 typealias FontAssets = R.font

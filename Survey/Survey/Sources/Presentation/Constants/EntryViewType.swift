@@ -10,5 +10,5 @@ import Foundation
 enum EntryViewType {
 
     case splash
-    case login
+    case login(viewModel: LoginViewModel)
 }

@@ -13,6 +13,7 @@ class EntryViewModel: ObservableObject {
     @Published private(set) var viewType: EntryViewType = .splash
     @Published var didFinishSplashAnimation = false
     private var cancellables = Set<AnyCancellable>()
+    private let network = LoginNetworkAPI(decoder: JSONDecoder())
 
     init() {
         $didFinishSplashAnimation
@@ -24,7 +25,10 @@ class EntryViewModel: ObservableObject {
     }
 
     private func goToNextView() {
-        viewType = .login
+        let loginRepo = LoginRepository(network: network)
+        let useCase = LoginUseCase(loginRepository: loginRepo)
+        let viewModel = LoginViewModel(loginUseCase: useCase)
+        viewType = .login(viewModel: viewModel)
         // TODO: add logic to check authentication and route accordingly
     }
 }
