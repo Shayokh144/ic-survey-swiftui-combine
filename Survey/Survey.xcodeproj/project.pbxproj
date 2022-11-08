@@ -14,8 +14,6 @@
 		047130B32913A67D00E83A9A /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130B22913A67D00E83A9A /* FontResource.swift */; };
 		047130B52913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 047130B42913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf */; };
 		047130B82913B9E200E83A9A /* EntryViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130B72913B9E200E83A9A /* EntryViewType.swift */; };
-		047130BB2913BD1800E83A9A /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130BA2913BD1700E83A9A /* AppViewModel.swift */; };
-		047130BD2913BD5500E83A9A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130BC2913BD5500E83A9A /* AppView.swift */; };
 		047130C02913BF6600E83A9A /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130BF2913BF6600E83A9A /* EmailTextField.swift */; };
 		047130C42913C15E00E83A9A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 047130C62913C15E00E83A9A /* Localizable.strings */; };
 		047130C82913C31100E83A9A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130C72913C31100E83A9A /* String+Extension.swift */; };
@@ -23,8 +21,6 @@
 		047130CD2913C64A00E83A9A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130CC2913C64A00E83A9A /* LoginButton.swift */; };
 		047130D02913C96700E83A9A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130CF2913C96700E83A9A /* SplashView.swift */; };
 		047B28E6290A772A005D615C /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B28E5290A772A005D615C /* ImageResource.swift */; };
-		048FC2C329127B7900B52907 /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = 048FC2C229127B7900B52907 /* FlowStacks */; };
-		048FC2C529127D8A00B52907 /* AppScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C429127D8A00B52907 /* AppScreenType.swift */; };
 		048FC2C7291283D000B52907 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C6291283D000B52907 /* EntryViewModel.swift */; };
 		048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C829128A6300B52907 /* AnimationCompletionObserverModifier.swift */; };
 		048FC2CB29128AF700B52907 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2CA29128AF600B52907 /* View+Extension.swift */; };
@@ -73,8 +69,6 @@
 		047130B22913A67D00E83A9A /* FontResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontResource.swift; sourceTree = "<group>"; };
 		047130B42913A7BA00E83A9A /* NeuzeitSLTStd-BookHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuzeitSLTStd-BookHeavy.otf"; sourceTree = "<group>"; };
 		047130B72913B9E200E83A9A /* EntryViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewType.swift; sourceTree = "<group>"; };
-		047130BA2913BD1700E83A9A /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
-		047130BC2913BD5500E83A9A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		047130BF2913BF6600E83A9A /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		047130C52913C15E00E83A9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		047130C72913C31100E83A9A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -82,7 +76,6 @@
 		047130CC2913C64A00E83A9A /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		047130CF2913C96700E83A9A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		047B28E5290A772A005D615C /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
-		048FC2C429127D8A00B52907 /* AppScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenType.swift; sourceTree = "<group>"; };
 		048FC2C6291283D000B52907 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
 		048FC2C829128A6300B52907 /* AnimationCompletionObserverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCompletionObserverModifier.swift; sourceTree = "<group>"; };
 		048FC2CA29128AF600B52907 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -136,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EDBB866438B03BA3972F58 /* Pods_Survey.framework in Frameworks */,
-				048FC2C329127B7900B52907 /* FlowStacks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,16 +175,6 @@
 				047130B72913B9E200E83A9A /* EntryViewType.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		047130B92913BCBA00E83A9A /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				048FC2C429127D8A00B52907 /* AppScreenType.swift */,
-				047130BA2913BD1700E83A9A /* AppViewModel.swift */,
-				047130BC2913BD5500E83A9A /* AppView.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		047130BE2913BF4900E83A9A /* TextFields */ = {
@@ -345,7 +327,6 @@
 		04BB8A632907FCDC00CAD4E5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				047130B92913BCBA00E83A9A /* Navigation */,
 				049F6F0B290B870C000C947F /* Supports */,
 				04BB8A6B2908027300CAD4E5 /* Presentation */,
 				04BB8A6A2908024F00CAD4E5 /* Domain */,
@@ -532,7 +513,6 @@
 			);
 			name = Survey;
 			packageProductDependencies = (
-				048FC2C229127B7900B52907 /* FlowStacks */,
 			);
 			productName = Survey;
 			productReference = 04BB8A512907FACB00CAD4E5 /* Survey.app */;
@@ -571,7 +551,6 @@
 			);
 			mainGroup = 04BB8A482907FACB00CAD4E5;
 			packageReferences = (
-				048FC2C129127B7900B52907 /* XCRemoteSwiftPackageReference "FlowStacks" */,
 			);
 			productRefGroup = 04BB8A522907FACB00CAD4E5 /* Products */;
 			projectDirPath = "";
@@ -816,17 +795,14 @@
 				047130D02913C96700E83A9A /* SplashView.swift in Sources */,
 				04C7A6662919416000EAA943 /* UIFont+Extension.swift in Sources */,
 				047B28E6290A772A005D615C /* ImageResource.swift in Sources */,
-				047130BD2913BD5500E83A9A /* AppView.swift in Sources */,
 				047130C82913C31100E83A9A /* String+Extension.swift in Sources */,
 				049F6F17290B93B7000C947F /* OverlayView.swift in Sources */,
 				048FC2C7291283D000B52907 /* EntryViewModel.swift in Sources */,
 				047130B32913A67D00E83A9A /* FontResource.swift in Sources */,
 				047130CA2913C4DC00E83A9A /* PasswordSecureTextField.swift in Sources */,
-				048FC2C529127D8A00B52907 /* AppScreenType.swift in Sources */,
 				048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */,
 				048FC2CE29128C3A00B52907 /* LoginView.swift in Sources */,
 				049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */,
-				047130BB2913BD1800E83A9A /* AppViewModel.swift in Sources */,
 				049F6F10290B8D7C000C947F /* R.generated.swift in Sources */,
 				047130AE2913863900E83A9A /* ColorResource.swift in Sources */,
 				04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */,
@@ -1539,25 +1515,6 @@
 			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		048FC2C129127B7900B52907 /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		048FC2C229127B7900B52907 /* FlowStacks */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 048FC2C129127B7900B52907 /* XCRemoteSwiftPackageReference "FlowStacks" */;
-			productName = FlowStacks;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04BB8A492907FACB00CAD4E5 /* Project object */;
 }

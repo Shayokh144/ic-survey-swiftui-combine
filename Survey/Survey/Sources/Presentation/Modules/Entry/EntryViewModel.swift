@@ -10,18 +10,17 @@ import SwiftUI
 
 class EntryViewModel: ObservableObject {
 
-    @Published var viewType: EntryViewType = .splash
-    var didFinishSplashAnimation = PassthroughSubject<Void, Never>()
-    let coordinator: AppViewModel
-    private var disposables = Set<AnyCancellable>()
+    @Published private(set) var viewType: EntryViewType = .splash
+    @Published var didFinishSplashAnimation = false
+    private var cancellables = Set<AnyCancellable>()
 
-    init(coordinator: AppViewModel) {
-        self.coordinator = coordinator
-
-        didFinishSplashAnimation.sink { [weak self] _ in
-            self?.goToNextView()
-        }
-        .store(in: &disposables)
+    init() {
+        $didFinishSplashAnimation
+            .filter { $0 }
+            .sink { [weak self] _ in
+                self?.goToNextView()
+            }
+            .store(in: &cancellables)
     }
 
     private func goToNextView() {

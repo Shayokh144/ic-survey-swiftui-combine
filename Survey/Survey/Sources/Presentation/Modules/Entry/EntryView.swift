@@ -17,7 +17,7 @@ struct EntryView: View {
         case .splash:
             SplashView(logoOpacity: $logoOpacity)
                 .onAnimationCompleted(for: logoOpacity) {
-                    viewModel.didFinishSplashAnimation.send()
+                    viewModel.didFinishSplashAnimation = true
                 }
         case .login:
             LoginView()
