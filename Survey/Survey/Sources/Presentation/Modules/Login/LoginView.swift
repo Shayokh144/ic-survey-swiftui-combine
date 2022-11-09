@@ -13,7 +13,6 @@ struct LoginView: View {
     @State private var logoOffset = 0.0
     @State private var logoScaleEffect = 1.0
     @State private var loginViewOpacity = 0.0
-    @State private var isLoginFailed = false
     @State var editingMode: Bool = false
 
     @ObservedObject var viewModel: LoginViewModel
@@ -41,7 +40,6 @@ struct LoginView: View {
                     Button(
                         action: {
                             // TODO: send action to viewmodel
-                            isLoginFailed = false
                             viewModel.login()
                         },
                         label: {
@@ -50,14 +48,26 @@ struct LoginView: View {
                     )
                     .accessibilityIdentifier("loginButtonIdentifier")
                 }
-                .alert(isPresented: $isLoginFailed) { () -> Alert in
+                .alert(isPresented: $viewModel.isLoginFailed) { () -> Alert in
                     Alert(
                         title: Text(Localize.login_failed_title()),
-                        message: Text(Localize.login_failed_description())
+                        message: Text(viewModel.errorMessage)
                     )
                 }
                 .offset(y: editingMode ? -140 : -60)
                 .opacity(loginViewOpacity)
+                .disabled(viewModel.isLoading)
+
+                if viewModel.isLoading {
+                    ZStack {
+                        Color(.black)
+                            .ignoresSafeArea()
+                            .opacity(0.4)
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                            .scaleEffect(2.0)
+                    }
+                }
             }
             .onAppear {
                 withAnimation(.easeInOut(duration: 1.0)) {

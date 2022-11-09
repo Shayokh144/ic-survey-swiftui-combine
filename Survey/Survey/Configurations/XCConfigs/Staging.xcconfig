@@ -9,4 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING
-SURVEY_API_BASE_URL = api.staging.org
+SURVEY_API_BASE_URL = survey-api.nimblehq.co

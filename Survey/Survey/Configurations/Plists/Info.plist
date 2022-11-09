@@ -4,12 +4,12 @@
 <dict>
 	<key>SURVEY_API_BASE_URL</key>
 	<string>$(SURVEY_API_BASE_URL)</string>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NeuzeitSLTStd-Book.otf</string>
 		<string>NeuzeitSLTStd-BookHeavy.otf</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
