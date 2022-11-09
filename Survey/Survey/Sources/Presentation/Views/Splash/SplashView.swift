@@ -2,21 +2,21 @@
 //  SplashView.swift
 //  Survey
 //
-//  Created by Taher on 25/10/22.
+//  Created by Taher on 3/11/22.
 //
 
 import SwiftUI
 
 struct SplashView: View {
 
-    @State private var logoOpacity = 0.0
+    @Binding var logoOpacity: Double
 
     var body: some View {
         ZStack {
             ImageAssets.splashBackground.imageView
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.top)
+                .edgesIgnoringSafeArea(.all)
             OverlayView.splashScreen.linearGradient
             ImageAssets.logoWhite.imageView
                 .resizable()
@@ -27,11 +27,5 @@ struct SplashView: View {
                 logoOpacity = 1.0
             }
         }
-    }
-}
-
-struct SplashView_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashView()
     }
 }
