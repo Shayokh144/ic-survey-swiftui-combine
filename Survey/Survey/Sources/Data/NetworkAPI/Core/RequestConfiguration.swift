@@ -34,4 +34,24 @@ extension RequestConfiguration {
     var contentTypeValue: String {
         "application/json"
     }
+
+    var urlRequest: URLRequest? {
+            guard let requestUrl = url else {
+                NSLog("Invalid URL given!")
+                return nil
+            }
+            var request = URLRequest(url: requestUrl, timeoutInterval: TimeInterval(timeOutValue))
+            request.httpMethod = method.current
+            request.addValue(contentTypeValue, forHTTPHeaderField: contentType)
+            request.httpBody = nil
+
+            if let body = parameters {
+                do {
+                    request.httpBody = try JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+                } catch {
+                    NSLog(error.localizedDescription)
+                }
+            }
+            return request
+    }
 }

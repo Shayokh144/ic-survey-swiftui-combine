@@ -20,38 +20,13 @@ extension APIRequestConfigurations {
 
     var endpoint: String {
         switch self {
-        case .login:
-            return "api/v1/oauth/token" // TODO: Read from config file in integration task
+        case .login: return "api/v1/oauth/token" // TODO: Read from config file in integration task
         }
     }
 
     var method: URLRequest.HttpMethod {
         switch self {
-        case .login:
-            return .post
-        }
-    }
-
-    var urlRequest: URLRequest? {
-        switch self {
-        case .login:
-            guard let requestUrl = url else {
-                NSLog("Invalid URL given!")
-                return nil
-            }
-            var request = URLRequest(url: requestUrl, timeoutInterval: TimeInterval(timeOutValue))
-            request.httpMethod = method.current
-            request.addValue(contentTypeValue, forHTTPHeaderField: contentType)
-            request.httpBody = nil
-
-            if let body = parameters {
-                do {
-                    request.httpBody = try JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                } catch {
-                    NSLog(error.localizedDescription)
-                }
-            }
-            return request
+        case .login: return .post
         }
     }
 
@@ -72,15 +47,13 @@ extension APIRequestConfigurations {
 
     var retryCount: Int {
         switch self {
-        case .login:
-            return 0
+        case .login: return 0
         }
     }
 
     var timeOutValue: Int {
         switch self {
-        case .login:
-            return 500
+        case .login: return 500
         }
     }
 }
