@@ -16,7 +16,7 @@ struct LoginView: View {
     @State private var isLoginFailed = false
     @State var editingMode: Bool = false
 
-    @StateObject var viewModel: LoginViewModel
+    @ObservedObject var viewModel: LoginViewModel
 
     var body: some View {
 
@@ -42,7 +42,7 @@ struct LoginView: View {
                         action: {
                             // TODO: send action to viewmodel
                             isLoginFailed = false
-                            viewModel.didTapLoginButton.send()
+                            viewModel.login()
                         },
                         label: {
                             LoginButton()

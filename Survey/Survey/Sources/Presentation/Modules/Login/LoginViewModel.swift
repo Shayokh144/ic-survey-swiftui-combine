@@ -14,26 +14,19 @@ final class LoginViewModel: ObservableObject {
 
     @Published var email: String = .empty
     @Published var password: String = .empty
-    var didTapLoginButton = PassthroughSubject<Void, Never>()
 
     // MARK: Output
 
     @Published var errorMessage: String = .empty
 
     private let loginUseCase: LoginUseCaseProtocol
-    private var disposables = CancelBag()
+    private var cancellables = CancelBag()
 
     init(loginUseCase: LoginUseCase) {
         self.loginUseCase = loginUseCase
-
-        didTapLoginButton.sink { [weak self] _ in
-            // TODO: check email pattern validity in integration task
-            self?.login()
-        }
-        .store(in: &disposables)
     }
 
-    private func login() {
+    func login() {
         loginUseCase
             .executeLogin(email: email, password: password)
             .receive(on: DispatchQueue.main)
@@ -47,16 +40,11 @@ final class LoginViewModel: ObservableObject {
                         NSLog("Login token response finished")
                     }
                 }, receiveValue: { data in
-                    guard let tokenData = data else {
-                        NSLog("ERROR: No login token data found")
-                        // TODO: show error message in integration task
-                        return
-                    }
-                    print(tokenData) // TODO: will remove in integration task
+                    print(data) // TODO: will remove in integration task
                     // TODO: save data in keychain in integration task
                     // TODO: move to next view in integration task
                 }
             )
-            .store(in: &disposables)
+            .store(in: &cancellables)
     }
 }

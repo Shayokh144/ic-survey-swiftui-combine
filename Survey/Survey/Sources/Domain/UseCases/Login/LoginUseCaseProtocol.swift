@@ -9,5 +9,5 @@ import Combine
 
 protocol LoginUseCaseProtocol: AnyObject {
 
-    func executeLogin(email: String, password: String) -> AnyPublisher<LoginTokenApi?, Error>
+    func executeLogin(email: String, password: String) -> AnyPublisher<LoginTokenApi, Error>
 }

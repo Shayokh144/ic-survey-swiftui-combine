@@ -36,11 +36,11 @@
 		0492B7E0291517C300D8E1D2 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7DF291517C300D8E1D2 /* URLRequest+Extension.swift */; };
 		0492B7E229151D0A00D8E1D2 /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E129151D0A00D8E1D2 /* NetworkAPIProtocol.swift */; };
 		0492B7E4291524EB00D8E1D2 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E3291524EB00D8E1D2 /* HTTPError.swift */; };
-		0492B7E72915259A00D8E1D2 /* LoginTokenRequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E62915259A00D8E1D2 /* LoginTokenRequestConfiguration.swift */; };
 		0492B7EA29152DBF00D8E1D2 /* LoginNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E929152DBF00D8E1D2 /* LoginNetworkAPI.swift */; };
 		049F6F10290B8D7C000C947F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F0F290B8D7C000C947F /* R.generated.swift */; };
 		049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F12290B8EEA000C947F /* Typealiases.swift */; };
 		049F6F17290B93B7000C947F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F16290B93B7000C947F /* OverlayView.swift */; };
+		04B72311291BB307005AF05E /* APIRequestConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B72310291BB307005AF05E /* APIRequestConfigurations.swift */; };
 		04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */; };
 		04BB8A592907FACD00CAD4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB8A582907FACD00CAD4E5 /* Assets.xcassets */; };
 		04BB8A6E290802E600CAD4E5 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* EntryView.swift */; };
@@ -104,11 +104,11 @@
 		0492B7DF291517C300D8E1D2 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		0492B7E129151D0A00D8E1D2 /* NetworkAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIProtocol.swift; sourceTree = "<group>"; };
 		0492B7E3291524EB00D8E1D2 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
-		0492B7E62915259A00D8E1D2 /* LoginTokenRequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTokenRequestConfiguration.swift; sourceTree = "<group>"; };
 		0492B7E929152DBF00D8E1D2 /* LoginNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkAPI.swift; sourceTree = "<group>"; };
 		049F6F0F290B8D7C000C947F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		049F6F12290B8EEA000C947F /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		049F6F16290B93B7000C947F /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		04B72310291BB307005AF05E /* APIRequestConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestConfigurations.swift; sourceTree = "<group>"; };
 		04BB8A512907FACB00CAD4E5 /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB8A542907FACC00CAD4E5 /* SurveyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApp.swift; sourceTree = "<group>"; };
 		04BB8A582907FACD00CAD4E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -345,7 +345,7 @@
 		0492B7E52915257800D8E1D2 /* RequestConfigurations */ = {
 			isa = PBXGroup;
 			children = (
-				0492B7E62915259A00D8E1D2 /* LoginTokenRequestConfiguration.swift */,
+				04B72310291BB307005AF05E /* APIRequestConfigurations.swift */,
 			);
 			path = RequestConfigurations;
 			sourceTree = "<group>";
@@ -932,7 +932,7 @@
 				047130CA2913C4DC00E83A9A /* PasswordSecureTextField.swift in Sources */,
 				0492B7DE2915102900D8E1D2 /* RequestConfiguration.swift in Sources */,
 				046E731D2918BE3C004DAB41 /* LoginViewModel.swift in Sources */,
-				0492B7E72915259A00D8E1D2 /* LoginTokenRequestConfiguration.swift in Sources */,
+				04B72311291BB307005AF05E /* APIRequestConfigurations.swift in Sources */,
 				0492B7D32915068700D8E1D2 /* LoginUseCase.swift in Sources */,
 				048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */,
 				048FC2CE29128C3A00B52907 /* LoginView.swift in Sources */,

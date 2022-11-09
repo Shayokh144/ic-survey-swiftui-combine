@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 final class LoginRepository: LoginRepositoryProtocol {
 
@@ -15,10 +16,11 @@ final class LoginRepository: LoginRepositoryProtocol {
         self.network = network
     }
 
-    func getLoginToken(email: String, password: String) -> AnyPublisher<LoginTokenApi?, Error> {
+    func getLoginToken(email: String, password: String) -> AnyPublisher<LoginTokenApi, Error> {
         network.performRequest(
-            LoginTokenRequestConfiguration(email: email, password: password),
-            for: LoginTokenApi.self
+            APIRequestConfigurations.login(email: email, password: password),
+            for: LoginTokenApi.self,
+            with: URLSession.shared
         )
     }
 }

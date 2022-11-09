@@ -16,18 +16,12 @@ final class LoginNetworkAPI: NetworkAPIProtocol {
         self.decoder = decoder
     }
 
-    func performRequest<T>(_ configuration: RequestConfiguration, for type: T.Type) -> AnyPublisher<T?, Error>
+    func performRequest<T>(_ configuration: RequestConfiguration, for type: T.Type, with urlSession: URLSession) -> Observable<T>
         where T: Decodable {
-        do {
-            return try request(
-                configuration: configuration,
-                decoder: decoder
-            )
-        } catch {
-            NSLog(error.localizedDescription)
-            return Just<T?>(nil)
-                .setFailureType(to: Error.self)
-                .eraseToAnyPublisher()
-        }
+        return request(
+            configuration: configuration,
+            decoder: decoder,
+            session: urlSession
+        )
     }
 }

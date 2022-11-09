@@ -10,20 +10,22 @@ import Foundation
 
 protocol NetworkAPIProtocol {
 
-    func performRequest<T: Decodable>(_ configuration: RequestConfiguration, for type: T.Type)
-        -> AnyPublisher<T?, Error>
+    func performRequest<T: Decodable>(_ configuration: RequestConfiguration, for type: T.Type, with urlSession: URLSession)
+        -> Observable<T>
 }
 
 extension NetworkAPIProtocol {
     
     func request<T: Decodable>(
         configuration: RequestConfiguration,
-        decoder: JSONDecoder
-    ) throws -> Observable<T> {
+        decoder: JSONDecoder,
+        session: URLSession
+    ) -> Observable<T> {
         guard let requestData = configuration.urlRequest else {
-            throw HTTPError.invalidUrl
+            return Fail(error: HTTPError.invalidUrl)
+                .eraseToAnyPublisher()
         }
-        return URLSession.shared.dataTaskPublisher(for: requestData)
+        return session.dataTaskPublisher(for: requestData)
             .tryMap { data, response -> Data in
                 guard let httpResponse = response as? HTTPURLResponse else {
                     throw HTTPError.invalidResponse
