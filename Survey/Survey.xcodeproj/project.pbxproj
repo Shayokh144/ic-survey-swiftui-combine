@@ -338,6 +338,7 @@
 				0492B7DD2915102900D8E1D2 /* RequestConfiguration.swift */,
 				0492B7E129151D0A00D8E1D2 /* NetworkAPIProtocol.swift */,
 				0492B7E3291524EB00D8E1D2 /* HTTPError.swift */,
+				04B72310291BB307005AF05E /* APIRequest.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
