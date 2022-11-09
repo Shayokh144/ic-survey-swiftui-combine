@@ -21,7 +21,7 @@ final class LoginViewModel: ObservableObject {
     @Published var errorMessage: String = .empty
 
     private let loginUseCase: LoginUseCaseProtocol
-    private var disposables = Set<AnyCancellable>()
+    private var disposables = CancelBag()
 
     init(loginUseCase: LoginUseCase) {
         self.loginUseCase = loginUseCase

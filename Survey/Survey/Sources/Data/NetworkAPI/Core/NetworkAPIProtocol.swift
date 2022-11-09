@@ -19,7 +19,7 @@ extension NetworkAPIProtocol {
     func request<T: Decodable>(
         configuration: RequestConfiguration,
         decoder: JSONDecoder
-    ) throws -> AnyPublisher<T, Error> {
+    ) throws -> Observable<T> {
         guard let requestData = configuration.urlRequest else {
             throw HTTPError.invalidUrl
         }

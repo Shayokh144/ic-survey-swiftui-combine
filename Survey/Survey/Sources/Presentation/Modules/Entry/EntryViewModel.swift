@@ -12,7 +12,7 @@ class EntryViewModel: ObservableObject {
 
     @Published private(set) var viewType: EntryViewType = .splash
     @Published var didFinishSplashAnimation = false
-    private var cancellables = Set<AnyCancellable>()
+    private var cancellables = CancelBag()
     private let network = LoginNetworkAPI(decoder: JSONDecoder())
 
     init() {

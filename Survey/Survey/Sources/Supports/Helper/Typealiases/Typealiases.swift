@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import Combine
 
-public typealias Parameters = [String: AnyHashable]
+typealias Parameters = [String: AnyHashable]
+typealias CancelBag = Set<AnyCancellable>
+typealias Observable<T> = AnyPublisher<T, Error>
 // R.swift
 typealias ImageAssets = R.image
 typealias ColorAssets = R.color
