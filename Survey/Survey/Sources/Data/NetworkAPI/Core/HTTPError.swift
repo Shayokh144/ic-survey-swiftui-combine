@@ -8,13 +8,16 @@
 import Foundation
 
 public enum HTTPError: Error, Equatable {
+
     case statusCode(Int)
     case invalidResponse
     case invalidUrl
 }
 
 extension HTTPError: LocalizedError {
+
     public var errorDescription: String? {
+        
         switch self {
         case .invalidResponse:
             return "Http error: invalid response" // TODO: Add localization
