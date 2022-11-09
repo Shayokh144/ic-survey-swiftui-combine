@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum HTTPError: Error, Equatable {
+enum HTTPError: Error, Equatable {
 
     case statusCode(Int)
     case invalidResponse
@@ -16,7 +16,7 @@ public enum HTTPError: Error, Equatable {
 
 extension HTTPError: LocalizedError {
 
-    public var errorDescription: String? {
+    var errorDescription: String? {
         
         switch self {
         case .invalidResponse:
