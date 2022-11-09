@@ -31,4 +31,20 @@ enum Configuration: String {
         }
         return "https://\(urlValue)/"
     }
+
+    static var clientId: String {
+        guard let clientId = Bundle.main.infoDictionary?["SURVEY_CLIENT_ID"] as? String else {
+            print("Error: did't find Client Id in configuration file")
+            return ""
+        }
+        return clientId
+    }
+
+    static var clientSecret: String {
+        guard let clientSecret = Bundle.main.infoDictionary?["SURVEY_CLIENT_SECRET"] as? String else {
+            print("Error: did't find Client Secret in configuration file")
+            return ""
+        }
+        return clientSecret
+    }
 }

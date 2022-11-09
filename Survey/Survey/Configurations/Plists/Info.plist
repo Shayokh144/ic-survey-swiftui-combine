@@ -4,6 +4,10 @@
 <dict>
 	<key>SURVEY_API_BASE_URL</key>
 	<string>$(SURVEY_API_BASE_URL)</string>
+	<key>SURVEY_CLIENT_ID</key>
+	<string>$(SURVEY_CLIENT_ID)</string>
+	<key>SURVEY_CLIENT_SECRET</key>
+	<string>$(SURVEY_CLIENT_SECRET)</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NeuzeitSLTStd-Book.otf</string>

@@ -24,27 +24,16 @@ final class LoginViewModel: ObservableObject {
     private let loginUseCase: LoginUseCaseProtocol
     private var cancellables = CancelBag()
     private let coordinator: AppViewModel
+    private let keyChain: KeychainHelper
 
-    init(loginUseCase: LoginUseCase, coordinator: AppViewModel) {
+    init(
+        loginUseCase: LoginUseCase,
+         coordinator: AppViewModel,
+        keyChain: KeychainHelper = .shared
+    ) {
         self.loginUseCase = loginUseCase
         self.coordinator = coordinator
-
-        /*didTapLoginButton.sink { [weak self] _ in
-            guard let owner = self else {
-                return
-            }
-            owner.isLoading = true
-            guard ValidityChecker.isValidEmail(address: owner.email) else {
-                owner.showErrorMessage(message: Localize.invalid_email_description())
-                return
-            }
-            guard ValidityChecker.isValidPasswordFormat(password: owner.password) else {
-                owner.showErrorMessage(message: Localize.invalid_password_format())
-                return
-            }
-            owner.login()
-        }
-        .store(in: &disposables)*/
+        self.keyChain = keyChain
     }
 
     private func showErrorMessage(message: String) {
@@ -54,6 +43,15 @@ final class LoginViewModel: ObservableObject {
     }
 
     func login() {
+        isLoading = true
+        guard ValidityChecker.isValidEmail(address: email) else {
+            showErrorMessage(message: Localize.invalid_email_description())
+            return
+        }
+        guard ValidityChecker.isValidPasswordFormat(password: password) else {
+            showErrorMessage(message: Localize.invalid_password_format())
+            return
+        }
         loginUseCase
             .executeLogin(email: email, password: password)
             .receive(on: DispatchQueue.main)
@@ -74,12 +72,7 @@ final class LoginViewModel: ObservableObject {
                     guard let owner = self else {
                         return
                     }
-                    guard let tokenData = data else {
-                        NSLog("ERROR: No login token data found for given credentials")
-                        owner.showErrorMessage(message: Localize.login_failed_description())
-                        return
-                    }
-                    owner.saveLoginToken(data: tokenData)
+                    owner.saveLoginToken(data: data)
                     owner.goToSurveyListView()
                 }
             )
@@ -87,7 +80,7 @@ final class LoginViewModel: ObservableObject {
     }
 
     private func saveLoginToken(data: LoginTokenApi) {
-        KeychainHelper.shared.save(item: data)
+        keyChain.save(item: data)
     }
 
     private func goToSurveyListView() {
