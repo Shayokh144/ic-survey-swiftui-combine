@@ -17,41 +17,36 @@ protocol RequestConfiguration {
     var parameters: Parameters? { get }
     var retryCount: Int { get }
     var timeOutValue: Int { get }
-    var contentType: String { get }
-    var contentTypeValue: String { get }
+    var headers: HTTPHeaders { get }
 }
 
 extension RequestConfiguration {
 
-    var url: URL? {
-        URL(string: baseURL)?.appendingPathComponent(endpoint)
+    var baseURL: String {
+        "https://survey-api.nimblehq.co/" // TODO: Read from config file in integration task
     }
 
-    var contentType: String {
-        "Content-Type"
-    }
-
-    var contentTypeValue: String {
-        "application/json"
-    }
+    var url: URL? { URL(string: baseURL)?.appendingPathComponent(endpoint) }
 
     var urlRequest: URLRequest? {
-            guard let requestUrl = url else {
-                NSLog("Invalid URL given!")
-                return nil
+        guard let requestUrl = url else {
+            NSLog("Invalid URL given!")
+            return nil
+        }
+        var request = URLRequest(url: requestUrl, timeoutInterval: TimeInterval(timeOutValue))
+        request.httpMethod = method.current
+        headers.forEach { request.addValue($0.value, forHTTPHeaderField: $0.key) }
+        if let body = parameters {
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+            } catch {
+                NSLog(error.localizedDescription)
             }
-            var request = URLRequest(url: requestUrl, timeoutInterval: TimeInterval(timeOutValue))
-            request.httpMethod = method.current
-            request.addValue(contentTypeValue, forHTTPHeaderField: contentType)
-            request.httpBody = nil
-
-            if let body = parameters {
-                do {
-                    request.httpBody = try JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
-                } catch {
-                    NSLog(error.localizedDescription)
-                }
-            }
-            return request
+        }
+        return request
     }
+
+    var timeOutValue: Int { 500 }
+
+    var headers: HTTPHeaders { ["Content-Type": "application/json"] }
 }

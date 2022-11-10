@@ -23,7 +23,7 @@ struct LoginTokenApi: Decodable, LoginToken {
     let tokenType: String
     let expiresIn: Int
     let refreshToken: String
-    let createdAt: Int
+    let createdAt: Date?
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -33,6 +33,6 @@ struct LoginTokenApi: Decodable, LoginToken {
         tokenType = try attributes.decode(String.self, forKey: .tokenType)
         expiresIn = try attributes.decode(Int.self, forKey: .expiresIn)
         refreshToken = try attributes.decode(String.self, forKey: .refreshToken)
-        createdAt = try attributes.decode(Int.self, forKey: .createdAt)
+        createdAt = try? attributes.decode(Date.self, forKey: .createdAt)
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 protocol NetworkAPIProtocol {
 
-    func performRequest<T: Decodable>(_ configuration: RequestConfiguration, for type: T.Type, with urlSession: URLSession)
+    func performRequest<T: Decodable>(_ configuration: RequestConfiguration, for type: T.Type)
         -> Observable<T>
 }
 

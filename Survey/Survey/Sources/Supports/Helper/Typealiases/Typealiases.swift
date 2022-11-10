@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 typealias Parameters = [String: AnyHashable]
+typealias HTTPHeaders = [String: String]
 typealias CancelBag = Set<AnyCancellable>
 typealias Observable<T> = AnyPublisher<T, Error>
 // R.swift

@@ -19,8 +19,7 @@ final class LoginRepository: LoginRepositoryProtocol {
     func getLoginToken(email: String, password: String) -> AnyPublisher<LoginTokenApi, Error> {
         network.performRequest(
             APIRequestConfigurations.login(email: email, password: password),
-            for: LoginTokenApi.self,
-            with: URLSession.shared
+            for: LoginTokenApi.self
         )
     }
 }

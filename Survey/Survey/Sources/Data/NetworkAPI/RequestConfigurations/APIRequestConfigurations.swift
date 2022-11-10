@@ -14,10 +14,6 @@ enum APIRequestConfigurations: RequestConfiguration {
 
 extension APIRequestConfigurations {
 
-    var baseURL: String {
-        "https://survey-api.nimblehq.co/" // TODO: Read from config file in integration task
-    }
-
     var endpoint: String {
         switch self {
         case .login: return "api/v1/oauth/token" // TODO: Read from config file in integration task
@@ -48,12 +44,6 @@ extension APIRequestConfigurations {
     var retryCount: Int {
         switch self {
         case .login: return 0
-        }
-    }
-
-    var timeOutValue: Int {
-        switch self {
-        case .login: return 500
         }
     }
 }

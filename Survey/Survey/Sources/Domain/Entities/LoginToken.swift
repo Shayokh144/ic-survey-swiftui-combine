@@ -13,5 +13,5 @@ protocol LoginToken {
     var tokenType: String { get }
     var expiresIn: Int { get }
     var refreshToken: String { get }
-    var createdAt: Int { get }
+    var createdAt: Date? { get }
 }
