@@ -1,5 +1,5 @@
 //
-//  APIRequest.swift
+//  APIRequestConfigurations.swift
 //  Survey
 //
 //  Created by Taher on 9/11/22.
