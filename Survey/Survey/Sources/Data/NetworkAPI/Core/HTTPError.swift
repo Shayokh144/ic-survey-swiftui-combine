@@ -17,7 +17,7 @@ enum HTTPError: Error, Equatable {
 extension HTTPError: LocalizedError {
 
     var errorDescription: String? {
-        
+
         switch self {
         case .invalidResponse:
             return "Http error: invalid response"

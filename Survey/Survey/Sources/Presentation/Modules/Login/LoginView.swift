@@ -39,7 +39,6 @@ struct LoginView: View {
                     PasswordSecureTextField(password: $viewModel.password, editingMode: $editingMode)
                     Button(
                         action: {
-                            // TODO: send action to viewmodel
                             viewModel.login()
                         },
                         label: {

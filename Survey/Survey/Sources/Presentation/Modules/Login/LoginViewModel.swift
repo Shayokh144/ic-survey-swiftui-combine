@@ -28,7 +28,7 @@ final class LoginViewModel: ObservableObject {
 
     init(
         loginUseCase: LoginUseCase,
-         coordinator: AppViewModel,
+        coordinator: AppViewModel,
         keyChain: KeychainHelper = .shared
     ) {
         self.loginUseCase = loginUseCase

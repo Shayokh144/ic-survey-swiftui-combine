@@ -14,7 +14,7 @@ protocol NetworkAPIProtocol {
 }
 
 extension NetworkAPIProtocol {
-    
+
     func request<T: Decodable>(
         configuration: RequestConfiguration,
         decoder: JSONDecoder,

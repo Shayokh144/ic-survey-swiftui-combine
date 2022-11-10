@@ -33,10 +33,8 @@ extension APIRequestConfigurations {
                 "grant_type": "password",
                 "email": email,
                 "password": password,
-                "client_id": "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE",
-                // TODO: Read from config file in integration task
-                "client_secret": "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU"
-                // TODO: Read from config file in integration task
+                "client_id": Configuration.clientId,
+                "client_secret": Configuration.clientSecret
             ]
         }
     }
