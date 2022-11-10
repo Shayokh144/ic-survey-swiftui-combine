@@ -9,5 +9,5 @@ import Combine
 
 protocol LoginRepositoryProtocol: AnyObject {
 
-    func getLoginToken(email: String, password: String) -> AnyPublisher<LoginTokenApi, Error>
+    func getLoginToken(email: String, password: String) -> Observable<LoginTokenApi>
 }

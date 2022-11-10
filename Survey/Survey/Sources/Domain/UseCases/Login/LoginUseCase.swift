@@ -15,7 +15,7 @@ final class LoginUseCase: LoginUseCaseProtocol {
         self.loginRepository = loginRepository
     }
 
-    func executeLogin(email: String, password: String) -> AnyPublisher<LoginTokenApi, Error> {
+    func executeLogin(email: String, password: String) -> Observable<LoginTokenApi> {
         loginRepository.getLoginToken(email: email, password: password)
     }
 }

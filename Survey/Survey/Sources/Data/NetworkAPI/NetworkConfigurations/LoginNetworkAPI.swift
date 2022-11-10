@@ -19,8 +19,7 @@ final class LoginNetworkAPI: NetworkAPIProtocol {
         decoder.dateDecodingStrategy = .secondsSince1970
     }
 
-    func performRequest<T>(_ configuration: RequestConfiguration, for type: T.Type) -> Observable<T>
-        where T: Decodable {
+    func performRequest<T>(_ configuration: RequestConfiguration, for type: T.Type) -> Observable<T> where T: Decodable {
         return request(
             configuration: configuration,
             decoder: decoder,

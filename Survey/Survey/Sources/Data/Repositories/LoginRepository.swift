@@ -16,7 +16,7 @@ final class LoginRepository: LoginRepositoryProtocol {
         self.network = network
     }
 
-    func getLoginToken(email: String, password: String) -> AnyPublisher<LoginTokenApi, Error> {
+    func getLoginToken(email: String, password: String) -> Observable<LoginTokenApi> {
         network.performRequest(
             APIRequestConfigurations.login(email: email, password: password),
             for: LoginTokenApi.self
