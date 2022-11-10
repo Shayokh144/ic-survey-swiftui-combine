@@ -16,7 +16,7 @@ extension APIRequestConfigurations {
 
     var endpoint: String {
         switch self {
-        case .login: return "api/v1/oauth/token" // TODO: Read from config file in integration task
+        case .login: return "api/v1/oauth/token"
         }
     }
 
