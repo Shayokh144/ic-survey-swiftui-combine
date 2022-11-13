@@ -26,24 +26,22 @@ enum Configuration: String {
 
     static var baseSurveyURL: String {
         guard let urlValue = Bundle.main.infoDictionary?["SURVEY_API_BASE_URL"] as? String else {
-            print("Error: did't find url in configuration file")
+            print("Error: didn't find url in configuration file")
             return ""
         }
-        return "https://\(urlValue)/"
+        return "https://\(urlValue)/api/v1/"
     }
 
     static var clientId: String {
         guard let clientId = Bundle.main.infoDictionary?["SURVEY_CLIENT_ID"] as? String else {
-            print("Error: did't find Client Id in configuration file")
-            return ""
+            fatalError("Error: didn't find Client Id in configuration file")
         }
         return clientId
     }
 
     static var clientSecret: String {
         guard let clientSecret = Bundle.main.infoDictionary?["SURVEY_CLIENT_SECRET"] as? String else {
-            print("Error: did't find Client Secret in configuration file")
-            return ""
+            fatalError("Error: didn't find Client Secret in configuration file")
         }
         return clientSecret
     }

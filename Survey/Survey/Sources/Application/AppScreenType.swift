@@ -9,6 +9,6 @@ import Foundation
 
 enum AppScreenType {
 
-    case entry
+    case entry(LoginNetworkAPI, LoginRepository, LoginUseCase)
     case surveyList
 }

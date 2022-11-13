@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */; };
 		043A1194290AFE7700F53F4B /* SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1193290AFE7700F53F4B /* SurveyUITests.swift */; };
+		04479FDE291E579F00C28D5B /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479FDD291E579F00C28D5B /* AppCoordinatorProtocol.swift */; };
+		04479FE0291E68F500C28D5B /* ValidityCheckerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479FDF291E68F500C28D5B /* ValidityCheckerProtocol.swift */; };
+		04479FE3291E6CF200C28D5B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 04479FE2291E6CF200C28D5B /* KeychainAccess */; };
 		046E731D2918BE3C004DAB41 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E731C2918BE3C004DAB41 /* LoginViewModel.swift */; };
 		047130AE2913863900E83A9A /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130AD2913863900E83A9A /* ColorResource.swift */; };
 		047130B12913A5F800E83A9A /* NeuzeitSLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 047130B02913A5F800E83A9A /* NeuzeitSLTStd-Book.otf */; };
@@ -22,6 +25,8 @@
 		047130CD2913C64A00E83A9A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130CC2913C64A00E83A9A /* LoginButton.swift */; };
 		047130D02913C96700E83A9A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047130CF2913C96700E83A9A /* SplashView.swift */; };
 		047B28E6290A772A005D615C /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B28E5290A772A005D615C /* ImageResource.swift */; };
+		048D32912921101E009E3F6F /* KeyChainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D32902921101E009E3F6F /* KeyChainError.swift */; };
+		048D329329211F51009E3F6F /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D329229211F51009E3F6F /* BlurView.swift */; };
 		048FC2C7291283D000B52907 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C6291283D000B52907 /* EntryViewModel.swift */; };
 		048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2C829128A6300B52907 /* AnimationCompletionObserverModifier.swift */; };
 		048FC2CB29128AF700B52907 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FC2CA29128AF600B52907 /* View+Extension.swift */; };
@@ -85,6 +90,8 @@
 		043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUnitTests.swift; sourceTree = "<group>"; };
 		043A1191290AFE7700F53F4B /* SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A1193290AFE7700F53F4B /* SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUITests.swift; sourceTree = "<group>"; };
+		04479FDD291E579F00C28D5B /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		04479FDF291E68F500C28D5B /* ValidityCheckerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidityCheckerProtocol.swift; sourceTree = "<group>"; };
 		046E731C2918BE3C004DAB41 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		047130AD2913863900E83A9A /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
 		047130B02913A5F800E83A9A /* NeuzeitSLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuzeitSLTStd-Book.otf"; sourceTree = "<group>"; };
@@ -98,6 +105,8 @@
 		047130CC2913C64A00E83A9A /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		047130CF2913C96700E83A9A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		047B28E5290A772A005D615C /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		048D32902921101E009E3F6F /* KeyChainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainError.swift; sourceTree = "<group>"; };
+		048D329229211F51009E3F6F /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		048FC2C6291283D000B52907 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
 		048FC2C829128A6300B52907 /* AnimationCompletionObserverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCompletionObserverModifier.swift; sourceTree = "<group>"; };
 		048FC2CA29128AF600B52907 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -171,6 +180,7 @@
 			files = (
 				B2EDBB866438B03BA3972F58 /* Pods_Survey.framework in Frameworks */,
 				04CD15D5291A2AAE002D778E /* FlowStacks in Frameworks */,
+				04479FE3291E6CF200C28D5B /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				049F6F16290B93B7000C947F /* OverlayView.swift */,
+				048D329229211F51009E3F6F /* BlurView.swift */,
 			);
 			path = Overlay;
 			sourceTree = "<group>";
@@ -534,6 +545,7 @@
 				04CD15D6291A2ADA002D778E /* AppScreenType.swift */,
 				04CD15D8291A2B0B002D778E /* AppView.swift */,
 				04CD15DA291A2B43002D778E /* AppViewModel.swift */,
+				04479FDD291E579F00C28D5B /* AppCoordinatorProtocol.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -577,6 +589,7 @@
 			isa = PBXGroup;
 			children = (
 				04CD15E1291A4FB5002D778E /* KeyChainConstants.swift */,
+				048D32902921101E009E3F6F /* KeyChainError.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -585,6 +598,7 @@
 			isa = PBXGroup;
 			children = (
 				04CD15E7291A7461002D778E /* ValidityChecker.swift */,
+				04479FDF291E68F500C28D5B /* ValidityCheckerProtocol.swift */,
 			);
 			path = ValidityChecker;
 			sourceTree = "<group>";
@@ -688,6 +702,7 @@
 			name = Survey;
 			packageProductDependencies = (
 				04CD15D4291A2AAE002D778E /* FlowStacks */,
+				04479FE2291E6CF200C28D5B /* KeychainAccess */,
 			);
 			productName = Survey;
 			productReference = 04BB8A512907FACB00CAD4E5 /* Survey.app */;
@@ -727,6 +742,7 @@
 			mainGroup = 04BB8A482907FACB00CAD4E5;
 			packageReferences = (
 				04CD15D3291A2AAE002D778E /* XCRemoteSwiftPackageReference "FlowStacks" */,
+				04479FE1291E6CF200C28D5B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 04BB8A522907FACB00CAD4E5 /* Products */;
 			projectDirPath = "";
@@ -968,6 +984,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CD15D9291A2B0B002D778E /* AppView.swift in Sources */,
+				048D32912921101E009E3F6F /* KeyChainError.swift in Sources */,
 				04E628FD29090A1E000032C8 /* Configuration.swift in Sources */,
 				047130D02913C96700E83A9A /* SplashView.swift in Sources */,
 				04C7A6662919416000EAA943 /* UIFont+Extension.swift in Sources */,
@@ -992,15 +1009,18 @@
 				04CD15D7291A2ADA002D778E /* AppScreenType.swift in Sources */,
 				049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */,
 				04CD15DE291A4094002D778E /* KeychainHelper.swift in Sources */,
+				04479FE0291E68F500C28D5B /* ValidityCheckerProtocol.swift in Sources */,
 				0492B7E4291524EB00D8E1D2 /* HTTPError.swift in Sources */,
 				0492B7D62915089A00D8E1D2 /* LoginRepository.swift in Sources */,
 				049F6F10290B8D7C000C947F /* R.generated.swift in Sources */,
 				047130AE2913863900E83A9A /* ColorResource.swift in Sources */,
 				04BB8A552907FACC00CAD4E5 /* SurveyApp.swift in Sources */,
+				04479FDE291E579F00C28D5B /* AppCoordinatorProtocol.swift in Sources */,
 				047130CD2913C64A00E83A9A /* LoginButton.swift in Sources */,
 				0492B7EA29152DBF00D8E1D2 /* LoginNetworkAPI.swift in Sources */,
 				04CD15DB291A2B43002D778E /* AppViewModel.swift in Sources */,
 				04CD15E2291A4FB5002D778E /* KeyChainConstants.swift in Sources */,
+				048D329329211F51009E3F6F /* BlurView.swift in Sources */,
 				0492B7D12915066C00D8E1D2 /* LoginUseCaseProtocol.swift in Sources */,
 				0492B7E0291517C300D8E1D2 /* URLRequest+Extension.swift in Sources */,
 				047130C02913BF6600E83A9A /* EmailTextField.swift in Sources */,
@@ -1716,6 +1736,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		04479FE1291E6CF200C28D5B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		04CD15D3291A2AAE002D778E /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks";
@@ -1727,6 +1755,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		04479FE2291E6CF200C28D5B /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04479FE1291E6CF200C28D5B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		04CD15D4291A2AAE002D778E /* FlowStacks */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 04CD15D3291A2AAE002D778E /* XCRemoteSwiftPackageReference "FlowStacks" */;

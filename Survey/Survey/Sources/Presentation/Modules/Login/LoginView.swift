@@ -13,9 +13,10 @@ struct LoginView: View {
     @State private var logoOffset = 0.0
     @State private var logoScaleEffect = 1.0
     @State private var loginViewOpacity = 0.0
+    @State private var shouldShowLoginFailedAlert = true
     @State var editingMode: Bool = false
 
-    @ObservedObject var viewModel: LoginViewModel
+    @ObservedObject private var viewModel: LoginViewModel
 
     var body: some View {
 
@@ -32,7 +33,7 @@ struct LoginView: View {
                     .resizable()
                     .frame(width: 202.0, height: 48.0, alignment: .center)
                     .scaleEffect(logoScaleEffect)
-                    .offset(y: editingMode ? -340 : logoOffset)
+                    .offset(y: editingMode ? -340.0 : logoOffset)
                 VStack(alignment: .center, spacing: 20.0) {
 
                     EmailTextField(email: $viewModel.email, editingMode: $editingMode)
@@ -47,21 +48,29 @@ struct LoginView: View {
                     )
                     .accessibilityIdentifier("loginButtonIdentifier")
                 }
-                .alert(isPresented: $viewModel.isLoginFailed) { () -> Alert in
-                    Alert(
-                        title: Text(Localize.login_failed_title()),
-                        message: Text(viewModel.errorMessage)
-                    )
-                }
-                .offset(y: editingMode ? -140 : -60)
+                .offset(y: editingMode ? -140.0 : -60.0)
                 .opacity(loginViewOpacity)
                 .disabled(viewModel.isLoading)
 
+                if viewModel.isLoginAttemptFailed {
+                    ZStack {
+                        BlurView()
+                    }
+                    .alert(isPresented: $shouldShowLoginFailedAlert) { () -> Alert in
+                        Alert(
+                            title: Text(Localize.login_failed_title()),
+                            message: Text(viewModel.errorMessage),
+                            dismissButton: .default(Text("OK")) {
+                                shouldShowLoginFailedAlert = true
+                                viewModel.didDismissLoginFailedAlert()
+                            }
+                        )
+                    }
+                }
+
                 if viewModel.isLoading {
                     ZStack {
-                        Color(.black)
-                            .ignoresSafeArea()
-                            .opacity(0.4)
+                        BlurView()
                         ProgressView()
                             .progressViewStyle(CircularProgressViewStyle(tint: .white))
                             .scaleEffect(2.0)
@@ -76,5 +85,9 @@ struct LoginView: View {
                 }
             }
         }.ignoresSafeArea(.keyboard, edges: .bottom)
+    }
+
+    init(viewModel: LoginViewModel) {
+        self.viewModel = viewModel
     }
 }

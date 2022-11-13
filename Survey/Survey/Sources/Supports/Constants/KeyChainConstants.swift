@@ -11,4 +11,6 @@ enum KeyChainConstants {
 
     static let keyChainServiceName = Bundle.main.bundleIdentifier
     static let keyChainAccountName = "devnimblelogintoken"
+    static let accessTokenKey = "access_token"
+    static let refreshTokenKey = "refresh_token"
 }

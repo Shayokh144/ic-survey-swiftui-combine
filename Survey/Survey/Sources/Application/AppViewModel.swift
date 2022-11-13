@@ -8,12 +8,15 @@
 import FlowStacks
 import SwiftUI
 
-class AppViewModel: ObservableObject {
+class AppViewModel: ObservableObject, AppCoordinatorProtocol {
 
     @Published var routes: Routes<AppScreenType>
 
     init() {
-        routes = [.root(.entry)]
+        let network = LoginNetworkAPI(decoder: JSONDecoder())
+        let loginRepo = LoginRepository(network: network)
+        let useCase = LoginUseCase(loginRepository: loginRepo)
+        routes = [.root(.entry(network, loginRepo, useCase))]
     }
 
     func goBack() {
@@ -24,7 +27,7 @@ class AppViewModel: ObservableObject {
         routes.goBackToRoot()
     }
 
-    func loadSurveyListView() {
+    func loadSurveyListAsRootView() {
         routes = [.root(.surveyList)]
     }
 }

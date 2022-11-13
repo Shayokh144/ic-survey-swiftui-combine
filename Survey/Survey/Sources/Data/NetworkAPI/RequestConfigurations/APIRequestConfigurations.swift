@@ -16,7 +16,7 @@ extension APIRequestConfigurations {
 
     var endpoint: String {
         switch self {
-        case .login: return "api/v1/oauth/token"
+        case .login: return "oauth/token"
         }
     }
 
@@ -28,7 +28,7 @@ extension APIRequestConfigurations {
 
     var parameters: Parameters? {
         switch self {
-        case .login(let email, let password):
+        case let .login(email, password):
             return [
                 "grant_type": "password",
                 "email": email,

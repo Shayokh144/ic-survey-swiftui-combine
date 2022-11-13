@@ -17,38 +17,45 @@ final class LoginViewModel: ObservableObject {
 
     // MARK: Output
 
-    @Published var isLoginFailed: Bool = false
+    @Published private(set) var isLoginAttemptFailed: Bool = false
     @Published private(set) var errorMessage: String = .empty
     @Published private(set) var isLoading: Bool = false
 
     private let loginUseCase: LoginUseCaseProtocol
     private var cancellables = CancelBag()
-    private let coordinator: AppViewModel
+    private let coordinator: AppCoordinatorProtocol
     private let keyChain: KeychainHelper
+    private let validityChecker: ValidityChecker
 
     init(
         loginUseCase: LoginUseCase,
         coordinator: AppViewModel,
-        keyChain: KeychainHelper = .shared
+        keyChain: KeychainHelper = .shared,
+        validityChecker: ValidityChecker = ValidityChecker()
     ) {
         self.loginUseCase = loginUseCase
         self.coordinator = coordinator
         self.keyChain = keyChain
+        self.validityChecker = validityChecker
     }
 
     private func showErrorMessage(message: String) {
         isLoading = false
         errorMessage = message
-        isLoginFailed = true
+        isLoginAttemptFailed = true
+    }
+
+    func didDismissLoginFailedAlert() {
+        isLoginAttemptFailed = false
     }
 
     func login() {
         isLoading = true
-        guard ValidityChecker.isValidEmail(address: email) else {
+        guard validityChecker.isValidEmail(address: email) else {
             showErrorMessage(message: Localize.invalid_email_description())
             return
         }
-        guard ValidityChecker.isValidPasswordFormat(password: password) else {
+        guard validityChecker.isValidPasswordFormat(password: password) else {
             showErrorMessage(message: Localize.invalid_password_format())
             return
         }
@@ -80,10 +87,17 @@ final class LoginViewModel: ObservableObject {
     }
 
     private func saveLoginToken(data: LoginTokenApi) {
-        keyChain.save(item: data)
+        do {
+            try keyChain.saveString(key: KeyChainConstants.accessTokenKey, value: data.accessToken)
+            try keyChain.saveString(key: KeyChainConstants.refreshTokenKey, value: data.refreshToken)
+        } catch let error as KeyChainError {
+            print(error.errorDescription)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 
     private func goToSurveyListView() {
-        coordinator.loadSurveyListView()
+        coordinator.loadSurveyListAsRootView()
     }
 }
