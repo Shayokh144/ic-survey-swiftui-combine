@@ -9,4 +9,6 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
-SURVEY_API_BASE_URL = api.debug.org
+SURVEY_API_BASE_URL = survey-api.nimblehq.co
+SURVEY_CLIENT_ID = ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE
+SURVEY_CLIENT_SECRET = lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU

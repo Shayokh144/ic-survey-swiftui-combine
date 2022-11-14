@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginTokenApi: Decodable, LoginToken {
+struct LoginTokenApi: Codable, LoginToken {
 
     enum CodingKeys: String, CodingKey {
         case data
@@ -34,5 +34,16 @@ struct LoginTokenApi: Decodable, LoginToken {
         expiresIn = try attributes.decode(Int.self, forKey: .expiresIn)
         refreshToken = try attributes.decode(String.self, forKey: .refreshToken)
         createdAt = try? attributes.decode(Date.self, forKey: .createdAt)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        var data = container.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)
+        var attributes = data.nestedContainer(keyedBy: CodingKeys.self, forKey: .attributes)
+        try attributes.encode(accessToken, forKey: .accessToken)
+        try attributes.encode(tokenType, forKey: .tokenType)
+        try attributes.encode(expiresIn, forKey: .expiresIn)
+        try attributes.encode(refreshToken, forKey: .refreshToken)
+        try attributes.encode(createdAt, forKey: .createdAt)
     }
 }

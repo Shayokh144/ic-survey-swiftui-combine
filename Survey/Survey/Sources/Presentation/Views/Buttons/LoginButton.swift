@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginButton: View {
-    
+
     var body: some View {
 
         Text(Localize.login_button())

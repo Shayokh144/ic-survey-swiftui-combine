@@ -22,9 +22,7 @@ protocol RequestConfiguration {
 
 extension RequestConfiguration {
 
-    var baseURL: String {
-        "https://survey-api.nimblehq.co/" // TODO: Read from config file in integration task
-    }
+    var baseURL: String { Configuration.baseSurveyURL }
 
     var url: URL? { URL(string: baseURL)?.appendingPathComponent(endpoint) }
 

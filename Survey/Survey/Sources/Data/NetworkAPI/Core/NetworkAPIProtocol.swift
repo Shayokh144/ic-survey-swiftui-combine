@@ -10,12 +10,11 @@ import Foundation
 
 protocol NetworkAPIProtocol {
 
-    func performRequest<T: Decodable>(_ configuration: RequestConfiguration, for type: T.Type)
-        -> Observable<T>
+    func performRequest<T: Decodable>(_ configuration: RequestConfiguration, for type: T.Type) -> Observable<T>
 }
 
 extension NetworkAPIProtocol {
-    
+
     func request<T: Decodable>(
         configuration: RequestConfiguration,
         decoder: JSONDecoder,

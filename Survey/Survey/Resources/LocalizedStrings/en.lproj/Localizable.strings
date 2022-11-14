@@ -7,7 +7,9 @@
 */
 
 "email_placeholder" = "Email";
-"password_placeholder" = "Password";
+"invalid_email_description" = "Your email is invalid. Please try with new one.";
+"invalid_password_format" = "Your password format is invalid. Please try with new one.";
 "login_button" = "Log in";
+"login_failed_description" = "Your email or password is incorrect. Please try again.";
 "login_failed_title" = "Login failed!";
-"login_failed_description" = "Email or password is wrong, please try again.";
+"password_placeholder" = "Password";

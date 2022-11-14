@@ -27,7 +27,7 @@ struct SurveyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            EntryView(viewModel: EntryViewModel())
+            AppView(viewModel: AppViewModel())
         }
     }
 }

@@ -17,14 +17,14 @@ enum HTTPError: Error, Equatable {
 extension HTTPError: LocalizedError {
 
     var errorDescription: String? {
-        
+
         switch self {
         case .invalidResponse:
-            return "Http error: invalid response" // TODO: Add localization
+            return "Http error: invalid response"
         case let .statusCode(int):
             return String(int)
         case .invalidUrl:
-            return "Invalid URL given." // TODO: Add localization
+            return "Invalid URL given."
         }
     }
 }
