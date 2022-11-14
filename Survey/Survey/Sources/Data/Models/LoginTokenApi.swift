@@ -36,6 +36,20 @@ struct LoginTokenApi: Codable, LoginToken {
         createdAt = try? attributes.decode(Date.self, forKey: .createdAt)
     }
 
+    init(
+        accessToken: String,
+        tokenType: String,
+        expiresIn: Int,
+        refreshToken: String,
+        createdAt: Date?
+    ) {
+        self.accessToken = accessToken
+        self.tokenType = tokenType
+        self.expiresIn = expiresIn
+        self.refreshToken = refreshToken
+        self.createdAt = createdAt
+    }
+
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         var data = container.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)

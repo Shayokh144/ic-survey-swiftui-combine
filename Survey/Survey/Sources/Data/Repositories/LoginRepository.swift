@@ -10,9 +10,9 @@ import Foundation
 
 final class LoginRepository: LoginRepositoryProtocol {
 
-    let network: LoginNetworkAPI
+    let network: NetworkAPIProtocol
 
-    init(network: LoginNetworkAPI) {
+    init(network: NetworkAPIProtocol) {
         self.network = network
     }
 

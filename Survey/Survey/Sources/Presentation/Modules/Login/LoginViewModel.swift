@@ -28,8 +28,8 @@ final class LoginViewModel: ObservableObject {
     private let validityChecker: ValidityChecker
 
     init(
-        loginUseCase: LoginUseCase,
-        coordinator: AppViewModel,
+        loginUseCase: LoginUseCaseProtocol,
+        coordinator: AppCoordinatorProtocol,
         keyChain: KeychainHelper = .shared,
         validityChecker: ValidityChecker = ValidityChecker()
     ) {

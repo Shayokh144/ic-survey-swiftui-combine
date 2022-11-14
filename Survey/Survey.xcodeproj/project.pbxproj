@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */; };
 		043A1194290AFE7700F53F4B /* SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1193290AFE7700F53F4B /* SurveyUITests.swift */; };
 		04479FDE291E579F00C28D5B /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479FDD291E579F00C28D5B /* AppCoordinatorProtocol.swift */; };
 		04479FE0291E68F500C28D5B /* ValidityCheckerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479FDF291E68F500C28D5B /* ValidityCheckerProtocol.swift */; };
@@ -42,6 +41,16 @@
 		0492B7E229151D0A00D8E1D2 /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E129151D0A00D8E1D2 /* NetworkAPIProtocol.swift */; };
 		0492B7E4291524EB00D8E1D2 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E3291524EB00D8E1D2 /* HTTPError.swift */; };
 		0492B7EA29152DBF00D8E1D2 /* LoginNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E929152DBF00D8E1D2 /* LoginNetworkAPI.swift */; };
+		049877192922640000506B70 /* MockLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049877172922637000506B70 /* MockLoginUseCase.swift */; };
+		0498771C292265B200506B70 /* LoginTokenApi+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D4F46291E232500CC9C77 /* LoginTokenApi+Dummy.swift */; };
+		0498771F29226AAE00506B70 /* MockAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498771E29226AAE00506B70 /* MockAppCoordinator.swift */; };
+		0498772129226EA600506B70 /* MockLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498772029226EA600506B70 /* MockLoginRepository.swift */; };
+		049877252922745E00506B70 /* LoginUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049877242922745E00506B70 /* LoginUseCaseSpec.swift */; };
+		0498772A2922796F00506B70 /* LoginNetworkAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049877292922796F00506B70 /* LoginNetworkAPISpec.swift */; };
+		0498772C29229C3000506B70 /* MockLoginNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498772B29229C3000506B70 /* MockLoginNetworkAPI.swift */; };
+		0498772E29229CF100506B70 /* LoginRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498772D29229CF100506B70 /* LoginRepositorySpec.swift */; };
+		049D4F40291E1F9A00CC9C77 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D4F3F291E1F9A00CC9C77 /* MockSession.swift */; };
+		049D4F42291E1FBF00CC9C77 /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D4F41291E1FBF00CC9C77 /* MockResponse.swift */; };
 		049F6F10290B8D7C000C947F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F0F290B8D7C000C947F /* R.generated.swift */; };
 		049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F12290B8EEA000C947F /* Typealiases.swift */; };
 		049F6F17290B93B7000C947F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F16290B93B7000C947F /* OverlayView.swift */; };
@@ -50,6 +59,8 @@
 		04BB8A6E290802E600CAD4E5 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8A6D290802E600CAD4E5 /* EntryView.swift */; };
 		04C7A6662919416000EAA943 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A6652919416000EAA943 /* UIFont+Extension.swift */; };
 		04CC3CB1291CE4DC00C5504C /* APIRequestConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC3CB0291CE4DC00C5504C /* APIRequestConfigurations.swift */; };
+		04CC3CB7291CFD3800C5504C /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC3CB6291CFD3800C5504C /* LoginViewModelSpec.swift */; };
+		04CC3CBD291D076900C5504C /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC3CBC291D076900C5504C /* MockURLProtocol.swift */; };
 		04CD15D2291A1C98002D778E /* SurveyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD15D1291A1C98002D778E /* SurveyListView.swift */; };
 		04CD15D5291A2AAE002D778E /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = 04CD15D4291A2AAE002D778E /* FlowStacks */; };
 		04CD15D7291A2ADA002D778E /* AppScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CD15D6291A2ADA002D778E /* AppScreenType.swift */; };
@@ -87,7 +98,6 @@
 /* Begin PBXFileReference section */
 		042B06B3290924AF00477605 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043A1183290AFE4700F53F4B /* SurveyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUnitTests.swift; sourceTree = "<group>"; };
 		043A1191290AFE7700F53F4B /* SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A1193290AFE7700F53F4B /* SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyUITests.swift; sourceTree = "<group>"; };
 		04479FDD291E579F00C28D5B /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -122,6 +132,16 @@
 		0492B7E129151D0A00D8E1D2 /* NetworkAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIProtocol.swift; sourceTree = "<group>"; };
 		0492B7E3291524EB00D8E1D2 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		0492B7E929152DBF00D8E1D2 /* LoginNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkAPI.swift; sourceTree = "<group>"; };
+		049877172922637000506B70 /* MockLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginUseCase.swift; sourceTree = "<group>"; };
+		0498771E29226AAE00506B70 /* MockAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppCoordinator.swift; sourceTree = "<group>"; };
+		0498772029226EA600506B70 /* MockLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginRepository.swift; sourceTree = "<group>"; };
+		049877242922745E00506B70 /* LoginUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseSpec.swift; sourceTree = "<group>"; };
+		049877292922796F00506B70 /* LoginNetworkAPISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkAPISpec.swift; sourceTree = "<group>"; };
+		0498772B29229C3000506B70 /* MockLoginNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginNetworkAPI.swift; sourceTree = "<group>"; };
+		0498772D29229CF100506B70 /* LoginRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositorySpec.swift; sourceTree = "<group>"; };
+		049D4F3F291E1F9A00CC9C77 /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
+		049D4F41291E1FBF00CC9C77 /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
+		049D4F46291E232500CC9C77 /* LoginTokenApi+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginTokenApi+Dummy.swift"; sourceTree = "<group>"; };
 		049F6F0F290B8D7C000C947F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		049F6F12290B8EEA000C947F /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		049F6F16290B93B7000C947F /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
@@ -131,6 +151,8 @@
 		04BB8A6D290802E600CAD4E5 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		04C7A6652919416000EAA943 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		04CC3CB0291CE4DC00C5504C /* APIRequestConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestConfigurations.swift; sourceTree = "<group>"; };
+		04CC3CB6291CFD3800C5504C /* LoginViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelSpec.swift; sourceTree = "<group>"; };
+		04CC3CBC291D076900C5504C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		04CD15D1291A1C98002D778E /* SurveyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListView.swift; sourceTree = "<group>"; };
 		04CD15D6291A2ADA002D778E /* AppScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenType.swift; sourceTree = "<group>"; };
 		04CD15D8291A2B0B002D778E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
@@ -199,7 +221,7 @@
 		043A1184290AFE4700F53F4B /* SurveyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				043A1185290AFE4700F53F4B /* SurveyUnitTests.swift */,
+				04CC3CB2291CFC9F00C5504C /* Sources */,
 			);
 			path = SurveyUnitTests;
 			sourceTree = "<group>";
@@ -382,6 +404,57 @@
 				0492B7E929152DBF00D8E1D2 /* LoginNetworkAPI.swift */,
 			);
 			path = NetworkConfigurations;
+			sourceTree = "<group>";
+		};
+		0498771D29226A8C00506B70 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0498771E29226AAE00506B70 /* MockAppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		049877222922742B00506B70 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				049877232922743400506B70 /* Login */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		049877232922743400506B70 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04CC3CB6291CFD3800C5504C /* LoginViewModelSpec.swift */,
+				049877242922745E00506B70 /* LoginUseCaseSpec.swift */,
+				049877292922796F00506B70 /* LoginNetworkAPISpec.swift */,
+				0498772D29229CF100506B70 /* LoginRepositorySpec.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		049D4F43291E22F100CC9C77 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				049D4F44291E22F600CC9C77 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		049D4F44291E22F600CC9C77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				049D4F45291E22FF00CC9C77 /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		049D4F45291E22FF00CC9C77 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				049D4F46291E232500CC9C77 /* LoginTokenApi+Dummy.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		049F6F0B290B870C000C947F /* Supports */ = {
@@ -567,6 +640,54 @@
 				048FC2C6291283D000B52907 /* EntryViewModel.swift */,
 			);
 			path = Entry;
+			sourceTree = "<group>";
+		};
+		04CC3CB2291CFC9F00C5504C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				049877222922742B00506B70 /* Specs */,
+				04CC3CB9291CFFCD00C5504C /* Dummy */,
+				04CC3CB8291CFFC700C5504C /* Mock */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		04CC3CB8291CFFC700C5504C /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				0498771D29226A8C00506B70 /* Coordinator */,
+				04CC3CBB291D074400C5504C /* Network */,
+				04CC3CBA291D002F00C5504C /* Login */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		04CC3CB9291CFFCD00C5504C /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				049D4F43291E22F100CC9C77 /* Data */,
+			);
+			path = Dummy;
+			sourceTree = "<group>";
+		};
+		04CC3CBA291D002F00C5504C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				049877172922637000506B70 /* MockLoginUseCase.swift */,
+				0498772029226EA600506B70 /* MockLoginRepository.swift */,
+				0498772B29229C3000506B70 /* MockLoginNetworkAPI.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04CC3CBB291D074400C5504C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04CC3CBC291D076900C5504C /* MockURLProtocol.swift */,
+				049D4F3F291E1F9A00CC9C77 /* MockSession.swift */,
+				049D4F41291E1FBF00CC9C77 /* MockResponse.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		04CD15D0291A1C2B002D778E /* SurveyList */ = {
@@ -967,7 +1088,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043A1186290AFE4700F53F4B /* SurveyUnitTests.swift in Sources */,
+				0498772E29229CF100506B70 /* LoginRepositorySpec.swift in Sources */,
+				0498772A2922796F00506B70 /* LoginNetworkAPISpec.swift in Sources */,
+				049D4F42291E1FBF00CC9C77 /* MockResponse.swift in Sources */,
+				049877252922745E00506B70 /* LoginUseCaseSpec.swift in Sources */,
+				04CC3CBD291D076900C5504C /* MockURLProtocol.swift in Sources */,
+				049D4F40291E1F9A00CC9C77 /* MockSession.swift in Sources */,
+				04CC3CB7291CFD3800C5504C /* LoginViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,12 +1127,15 @@
 				047130CA2913C4DC00E83A9A /* PasswordSecureTextField.swift in Sources */,
 				04CD15E8291A7461002D778E /* ValidityChecker.swift in Sources */,
 				04CD15D2291A1C98002D778E /* SurveyListView.swift in Sources */,
+				0498771C292265B200506B70 /* LoginTokenApi+Dummy.swift in Sources */,
 				0492B7DE2915102900D8E1D2 /* RequestConfiguration.swift in Sources */,
 				046E731D2918BE3C004DAB41 /* LoginViewModel.swift in Sources */,
 				0492B7D32915068700D8E1D2 /* LoginUseCase.swift in Sources */,
 				048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */,
 				048FC2CE29128C3A00B52907 /* LoginView.swift in Sources */,
+				0498772129226EA600506B70 /* MockLoginRepository.swift in Sources */,
 				0492B7CD291501DF00D8E1D2 /* LoginToken.swift in Sources */,
+				0498772C29229C3000506B70 /* MockLoginNetworkAPI.swift in Sources */,
 				04CD15D7291A2ADA002D778E /* AppScreenType.swift in Sources */,
 				049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */,
 				04CD15DE291A4094002D778E /* KeychainHelper.swift in Sources */,
@@ -1018,11 +1148,13 @@
 				04479FDE291E579F00C28D5B /* AppCoordinatorProtocol.swift in Sources */,
 				047130CD2913C64A00E83A9A /* LoginButton.swift in Sources */,
 				0492B7EA29152DBF00D8E1D2 /* LoginNetworkAPI.swift in Sources */,
+				0498771F29226AAE00506B70 /* MockAppCoordinator.swift in Sources */,
 				04CD15DB291A2B43002D778E /* AppViewModel.swift in Sources */,
 				04CD15E2291A4FB5002D778E /* KeyChainConstants.swift in Sources */,
 				048D329329211F51009E3F6F /* BlurView.swift in Sources */,
 				0492B7D12915066C00D8E1D2 /* LoginUseCaseProtocol.swift in Sources */,
 				0492B7E0291517C300D8E1D2 /* URLRequest+Extension.swift in Sources */,
+				049877192922640000506B70 /* MockLoginUseCase.swift in Sources */,
 				047130C02913BF6600E83A9A /* EmailTextField.swift in Sources */,
 				048FC2CB29128AF700B52907 /* View+Extension.swift in Sources */,
 				047130B82913B9E200E83A9A /* EntryViewType.swift in Sources */,
