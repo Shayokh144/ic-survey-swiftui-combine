@@ -41,9 +41,16 @@
 		0492B7E229151D0A00D8E1D2 /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E129151D0A00D8E1D2 /* NetworkAPIProtocol.swift */; };
 		0492B7E4291524EB00D8E1D2 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E3291524EB00D8E1D2 /* HTTPError.swift */; };
 		0492B7EA29152DBF00D8E1D2 /* LoginNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492B7E929152DBF00D8E1D2 /* LoginNetworkAPI.swift */; };
+		049877192922640000506B70 /* MockLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049877172922637000506B70 /* MockLoginUseCase.swift */; };
+		0498771C292265B200506B70 /* LoginTokenApi+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D4F46291E232500CC9C77 /* LoginTokenApi+Dummy.swift */; };
+		0498771F29226AAE00506B70 /* MockAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498771E29226AAE00506B70 /* MockAppCoordinator.swift */; };
+		0498772129226EA600506B70 /* MockLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498772029226EA600506B70 /* MockLoginRepository.swift */; };
+		049877252922745E00506B70 /* LoginUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049877242922745E00506B70 /* LoginUseCaseSpec.swift */; };
+		0498772A2922796F00506B70 /* LoginNetworkAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049877292922796F00506B70 /* LoginNetworkAPISpec.swift */; };
+		0498772C29229C3000506B70 /* MockLoginNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498772B29229C3000506B70 /* MockLoginNetworkAPI.swift */; };
+		0498772E29229CF100506B70 /* LoginRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498772D29229CF100506B70 /* LoginRepositorySpec.swift */; };
 		049D4F40291E1F9A00CC9C77 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D4F3F291E1F9A00CC9C77 /* MockSession.swift */; };
 		049D4F42291E1FBF00CC9C77 /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D4F41291E1FBF00CC9C77 /* MockResponse.swift */; };
-		049D4F47291E232500CC9C77 /* LoginTokenApi+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D4F46291E232500CC9C77 /* LoginTokenApi+Dummy.swift */; };
 		049F6F10290B8D7C000C947F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F0F290B8D7C000C947F /* R.generated.swift */; };
 		049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F12290B8EEA000C947F /* Typealiases.swift */; };
 		049F6F17290B93B7000C947F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F6F16290B93B7000C947F /* OverlayView.swift */; };
@@ -125,6 +132,13 @@
 		0492B7E129151D0A00D8E1D2 /* NetworkAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIProtocol.swift; sourceTree = "<group>"; };
 		0492B7E3291524EB00D8E1D2 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		0492B7E929152DBF00D8E1D2 /* LoginNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkAPI.swift; sourceTree = "<group>"; };
+		049877172922637000506B70 /* MockLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginUseCase.swift; sourceTree = "<group>"; };
+		0498771E29226AAE00506B70 /* MockAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppCoordinator.swift; sourceTree = "<group>"; };
+		0498772029226EA600506B70 /* MockLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginRepository.swift; sourceTree = "<group>"; };
+		049877242922745E00506B70 /* LoginUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseSpec.swift; sourceTree = "<group>"; };
+		049877292922796F00506B70 /* LoginNetworkAPISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkAPISpec.swift; sourceTree = "<group>"; };
+		0498772B29229C3000506B70 /* MockLoginNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginNetworkAPI.swift; sourceTree = "<group>"; };
+		0498772D29229CF100506B70 /* LoginRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositorySpec.swift; sourceTree = "<group>"; };
 		049D4F3F291E1F9A00CC9C77 /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		049D4F41291E1FBF00CC9C77 /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
 		049D4F46291E232500CC9C77 /* LoginTokenApi+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginTokenApi+Dummy.swift"; sourceTree = "<group>"; };
@@ -392,6 +406,33 @@
 			path = NetworkConfigurations;
 			sourceTree = "<group>";
 		};
+		0498771D29226A8C00506B70 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0498771E29226AAE00506B70 /* MockAppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		049877222922742B00506B70 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				049877232922743400506B70 /* Login */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		049877232922743400506B70 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04CC3CB6291CFD3800C5504C /* LoginViewModelSpec.swift */,
+				049877242922745E00506B70 /* LoginUseCaseSpec.swift */,
+				049877292922796F00506B70 /* LoginNetworkAPISpec.swift */,
+				0498772D29229CF100506B70 /* LoginRepositorySpec.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		049D4F43291E22F100CC9C77 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,40 +645,17 @@
 		04CC3CB2291CFC9F00C5504C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				049877222922742B00506B70 /* Specs */,
 				04CC3CB9291CFFCD00C5504C /* Dummy */,
 				04CC3CB8291CFFC700C5504C /* Mock */,
-				04CC3CB3291CFCB100C5504C /* Presentation */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		04CC3CB3291CFCB100C5504C /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				04CC3CB4291CFD1600C5504C /* Modules */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		04CC3CB4291CFD1600C5504C /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				04CC3CB5291CFD2100C5504C /* Login */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		04CC3CB5291CFD2100C5504C /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				04CC3CB6291CFD3800C5504C /* LoginViewModelSpec.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		04CC3CB8291CFFC700C5504C /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				0498771D29226A8C00506B70 /* Coordinator */,
 				04CC3CBB291D074400C5504C /* Network */,
 				04CC3CBA291D002F00C5504C /* Login */,
 			);
@@ -655,6 +673,9 @@
 		04CC3CBA291D002F00C5504C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				049877172922637000506B70 /* MockLoginUseCase.swift */,
+				0498772029226EA600506B70 /* MockLoginRepository.swift */,
+				0498772B29229C3000506B70 /* MockLoginNetworkAPI.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1067,9 +1088,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0498772E29229CF100506B70 /* LoginRepositorySpec.swift in Sources */,
+				0498772A2922796F00506B70 /* LoginNetworkAPISpec.swift in Sources */,
 				049D4F42291E1FBF00CC9C77 /* MockResponse.swift in Sources */,
+				049877252922745E00506B70 /* LoginUseCaseSpec.swift in Sources */,
 				04CC3CBD291D076900C5504C /* MockURLProtocol.swift in Sources */,
-				049D4F47291E232500CC9C77 /* LoginTokenApi+Dummy.swift in Sources */,
 				049D4F40291E1F9A00CC9C77 /* MockSession.swift in Sources */,
 				04CC3CB7291CFD3800C5504C /* LoginViewModelSpec.swift in Sources */,
 			);
@@ -1104,12 +1127,15 @@
 				047130CA2913C4DC00E83A9A /* PasswordSecureTextField.swift in Sources */,
 				04CD15E8291A7461002D778E /* ValidityChecker.swift in Sources */,
 				04CD15D2291A1C98002D778E /* SurveyListView.swift in Sources */,
+				0498771C292265B200506B70 /* LoginTokenApi+Dummy.swift in Sources */,
 				0492B7DE2915102900D8E1D2 /* RequestConfiguration.swift in Sources */,
 				046E731D2918BE3C004DAB41 /* LoginViewModel.swift in Sources */,
 				0492B7D32915068700D8E1D2 /* LoginUseCase.swift in Sources */,
 				048FC2C929128A6300B52907 /* AnimationCompletionObserverModifier.swift in Sources */,
 				048FC2CE29128C3A00B52907 /* LoginView.swift in Sources */,
+				0498772129226EA600506B70 /* MockLoginRepository.swift in Sources */,
 				0492B7CD291501DF00D8E1D2 /* LoginToken.swift in Sources */,
+				0498772C29229C3000506B70 /* MockLoginNetworkAPI.swift in Sources */,
 				04CD15D7291A2ADA002D778E /* AppScreenType.swift in Sources */,
 				049F6F13290B8EEA000C947F /* Typealiases.swift in Sources */,
 				04CD15DE291A4094002D778E /* KeychainHelper.swift in Sources */,
@@ -1122,11 +1148,13 @@
 				04479FDE291E579F00C28D5B /* AppCoordinatorProtocol.swift in Sources */,
 				047130CD2913C64A00E83A9A /* LoginButton.swift in Sources */,
 				0492B7EA29152DBF00D8E1D2 /* LoginNetworkAPI.swift in Sources */,
+				0498771F29226AAE00506B70 /* MockAppCoordinator.swift in Sources */,
 				04CD15DB291A2B43002D778E /* AppViewModel.swift in Sources */,
 				04CD15E2291A4FB5002D778E /* KeyChainConstants.swift in Sources */,
 				048D329329211F51009E3F6F /* BlurView.swift in Sources */,
 				0492B7D12915066C00D8E1D2 /* LoginUseCaseProtocol.swift in Sources */,
 				0492B7E0291517C300D8E1D2 /* URLRequest+Extension.swift in Sources */,
+				049877192922640000506B70 /* MockLoginUseCase.swift in Sources */,
 				047130C02913BF6600E83A9A /* EmailTextField.swift in Sources */,
 				048FC2CB29128AF700B52907 /* View+Extension.swift in Sources */,
 				047130B82913B9E200E83A9A /* EntryViewType.swift in Sources */,

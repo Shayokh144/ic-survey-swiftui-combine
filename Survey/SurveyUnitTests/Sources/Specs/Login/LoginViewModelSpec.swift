@@ -17,36 +17,24 @@ final class LoginViewModelSpec: QuickSpec {
     override func spec() {
 
         var viewModel: LoginViewModel!
-        let baseUrl = URL(string: "https://survey-api.nimblehq.co/api/v1/oauth/token")
-        let encoder = JSONEncoder()
+        var loginUseCase: MockLoginUseCase!
+        var coordinator: MockAppCoordinator!
 
         describe("a LoginViewModel") {
 
-            context("when a valid response is provided") {
+            beforeEach {
+                coordinator = MockAppCoordinator()
+                loginUseCase = MockLoginUseCase()
+            }
+
+            context("when a valid credentials are provided") {
 
                 beforeEach {
-                    guard let url = baseUrl else {
-                        return
-                    }
-                    let tokenData = LoginTokenApi.createDummy()
-                    var mockLoginData = Data()
-                    do {
-                        mockLoginData = try encoder.encode(tokenData)
-                    } catch {
-                        NSLog(error.localizedDescription)
-                    }
-                    let session = MockSession.make(
-                        url: url,
-                        data: mockLoginData,
-                        statusCode: 200
+                    viewModel = LoginViewModel(
+                        loginUseCase: loginUseCase,
+                        coordinator: coordinator
                     )
-
-                    let network = LoginNetworkAPI(decoder: JSONDecoder(), session: session)
-                    let loginRepo = LoginRepository(network: network)
-                    let useCase = LoginUseCase(loginRepository: loginRepo)
-
-                    viewModel = LoginViewModel(loginUseCase: useCase, coordinator: AppViewModel())
-                    viewModel.email = "abc@gmail.com"
+                    viewModel.email = "abc@nimblehq.co"
                     viewModel.password = "12345"
                     viewModel.login()
                 }
@@ -66,31 +54,29 @@ final class LoginViewModelSpec: QuickSpec {
                             timeout: .seconds(2)
                         )
                 }
+
+                it("should load survey view") {
+                    expect(coordinator.isSurveyViewLoaded)
+                        .toEventually(
+                            equal(true),
+                            timeout: .seconds(2)
+                        )
+                }
             }
 
-            context("when an invalid response is provided") {
+            context("when an wrong credentials are provided") {
 
                 beforeEach {
-                    guard let url = baseUrl else {
-                        return
-                    }
-                    let session = MockSession.make(
-                        url: url,
-                        data: Data("invalid data".utf8),
-                        statusCode: 401
+                    viewModel = LoginViewModel(
+                        loginUseCase: loginUseCase,
+                        coordinator: coordinator
                     )
-
-                    let network = LoginNetworkAPI(decoder: JSONDecoder(), session: session)
-                    let loginRepo = LoginRepository(network: network)
-                    let useCase = LoginUseCase(loginRepository: loginRepo)
-
-                    viewModel = LoginViewModel(loginUseCase: useCase, coordinator: AppViewModel())
-                    viewModel.email = "abc@gmail.com"
+                    viewModel.email = "abc@gmail.co"
                     viewModel.password = "12345"
                     viewModel.login()
                 }
 
-                it("should not show any error") {
+                it("should show error for wrong credentials") {
                     expect(viewModel.errorMessage)
                         .toEventually(
                             equal("Your email or password is incorrect. Please try again."),
@@ -105,20 +91,23 @@ final class LoginViewModelSpec: QuickSpec {
                             timeout: .seconds(2)
                         )
                 }
+
+                it("should not load survey view") {
+                    expect(coordinator.isSurveyViewLoaded)
+                        .toEventually(
+                            equal(false),
+                            timeout: .seconds(2)
+                        )
+                }
             }
 
             context("when email format is invalid") {
 
                 beforeEach {
-                    guard let url = baseUrl else {
-                        return
-                    }
-                    let session = MockSession.make(url: url, data: Data(), statusCode: 401)
-                    let network = LoginNetworkAPI(decoder: JSONDecoder(), session: session)
-                    let loginRepo = LoginRepository(network: network)
-                    let useCase = LoginUseCase(loginRepository: loginRepo)
-
-                    viewModel = LoginViewModel(loginUseCase: useCase, coordinator: AppViewModel())
+                    viewModel = LoginViewModel(
+                        loginUseCase: loginUseCase,
+                        coordinator: coordinator
+                    )
                     viewModel.email = "abc"
                     viewModel.password = "12345"
                     viewModel.login()
@@ -139,20 +128,23 @@ final class LoginViewModelSpec: QuickSpec {
                             timeout: .seconds(2)
                         )
                 }
+
+                it("should not load survey view") {
+                    expect(coordinator.isSurveyViewLoaded)
+                        .toEventually(
+                            equal(false),
+                            timeout: .seconds(2)
+                        )
+                }
             }
 
             context("when password format is invalid") {
 
                 beforeEach {
-                    guard let url = baseUrl else {
-                        return
-                    }
-                    let session = MockSession.make(url: url, data: Data(), statusCode: 401)
-                    let network = LoginNetworkAPI(decoder: JSONDecoder(), session: session)
-                    let loginRepo = LoginRepository(network: network)
-                    let useCase = LoginUseCase(loginRepository: loginRepo)
-
-                    viewModel = LoginViewModel(loginUseCase: useCase, coordinator: AppViewModel())
+                    viewModel = LoginViewModel(
+                        loginUseCase: loginUseCase,
+                        coordinator: coordinator
+                    )
                     viewModel.email = "abc@gmail.com"
                     viewModel.password = ""
                     viewModel.login()
@@ -170,6 +162,14 @@ final class LoginViewModelSpec: QuickSpec {
                     expect(viewModel.isLoginAttemptFailed)
                         .toEventually(
                             equal(true),
+                            timeout: .seconds(2)
+                        )
+                }
+
+                it("should not load survey view") {
+                    expect(coordinator.isSurveyViewLoaded)
+                        .toEventually(
+                            equal(false),
                             timeout: .seconds(2)
                         )
                 }
